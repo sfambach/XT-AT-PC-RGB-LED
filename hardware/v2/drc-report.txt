@@ -1,0 +1,98 @@
+** Drc report for /home/user/xt-at-pc-rgb-led/hardware/v2/xt-at-pc-rgb-led-v2.kicad_pcb **
+** Created on 2026-10-25 06:44:45 **
+
+** Found 22 DRC violations **
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(126.6700 mm, 100.9000 mm): PCB Text 'SW IN' on F.Silkscreen
+    @(126.6700 mm, 101.2100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(131.6900 mm, 103.8700 mm): Line on F.Silkscreen
+    @(132.3850 mm, 104.2300 mm): Reference 'R6'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(134.2900 mm, 100.9000 mm): PCB Text 'SW OUT' on F.Silkscreen
+    @(134.2900 mm, 101.2100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(119.0500 mm, 100.9000 mm): PCB Text 'TURBO' on F.Silkscreen
+    @(119.0500 mm, 101.2100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(132.3850 mm, 104.2300 mm): Reference 'R6'
+    @(133.0200 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(126.6700 mm, 104.2300 mm): Reference 'R5'
+    @(126.6700 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(119.0500 mm, 103.8700 mm): Line on F.Silkscreen
+    @(120.9550 mm, 104.2300 mm): Reference 'R4'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(119.0500 mm, 103.8700 mm): Line on F.Silkscreen
+    @(119.0500 mm, 100.9000 mm): PCB Text 'TURBO' on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(135.5600 mm, 121.9000 mm): PCB Text 'ISP' on F.Silkscreen
+    @(135.5600 mm, 121.5900 mm): Reference 'J8'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(127.9400 mm, 127.6000 mm): PCB Text 'A  COM  K' on F.Silkscreen
+    @(126.6700 mm, 127.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(116.5100 mm, 130.6000 mm): PCB Text 'COM R G B' on F.Silkscreen
+    @(113.9700 mm, 130.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(127.9400 mm, 127.6000 mm): PCB Text 'A  COM  K' on F.Silkscreen
+    @(125.4000 mm, 127.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(103.8100 mm, 104.2300 mm): Reference 'R1'
+    @(103.8100 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(103.8100 mm, 100.9000 mm): PCB Text '+5V GND' on F.Silkscreen
+    @(103.8100 mm, 101.2100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(103.8100 mm, 100.9000 mm): PCB Text '+5V GND' on F.Silkscreen
+    @(106.4100 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(109.5250 mm, 104.2300 mm): Reference 'R2'
+    @(108.8300 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(109.5250 mm, 104.2300 mm): Reference 'R2'
+    @(110.1600 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(111.4300 mm, 100.9000 mm): PCB Text 'HDD' on F.Silkscreen
+    @(111.4300 mm, 101.2100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(111.4300 mm, 100.9000 mm): PCB Text 'HDD' on F.Silkscreen
+    @(111.4300 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(105.0800 mm, 130.6000 mm): PCB Text '5V D GND' on F.Silkscreen
+    @(102.5400 mm, 130.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(105.0800 mm, 130.6000 mm): PCB Text '5V D GND' on F.Silkscreen
+    @(103.8100 mm, 130.3300 mm): Line on F.Silkscreen
+[starved_thermal]: Thermal relief connection to zone incomplete (zone min spoke count 2; actual 1)
+    Local override; Severity: error
+    @(93.5000 mm, 100.5000 mm): Zone [GND] on B.Cu
+    @(130.4800 mm, 126.0000 mm): PTH pad 3 [GND] of JP1
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

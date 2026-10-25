@@ -1,0 +1,3163 @@
+(kicad_sch
+  (version 20230121)
+  (generator eeschema)
+  (uuid "1efdde9d-0a74-4f3c-8610-341fa81995a9")
+  (paper "A4")
+  (title_block
+    (title "XT-AT-PC-RGB-LED v2 - ATtiny84")
+    (date "2026-10-25")
+    (rev "1.0")
+    (company "fambach.net"))
+  (lib_symbols
+    (symbol "MCU_Microchip_ATtiny:ATtiny84A-P"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at -12.7 21.59 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left bottom)))
+      (property "Value" "ATtiny84A-P"
+        (at 2.54 -21.59 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left top)))
+      (property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+            italic)
+          hide))
+      (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "AVR 8bit Microcontroller tinyAVR"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-14"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_fp_filters" "DIP*W7.62mm*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "ATtiny84A-P_0_1"
+        (rectangle
+          (start -12.7 -20.32)
+          (end 12.7 20.32)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "ATtiny84A-P_1_1"
+        (pin power_in line
+          (at 0 22.86 270)
+          (length 2.54)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 7.62 180)
+          (length 2.54)
+          (name "PA3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 10.16 180)
+          (length 2.54)
+          (name "PA2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 12.7 180)
+          (length 2.54)
+          (name "PA1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 15.24 180)
+          (length 2.54)
+          (name "AREF/PA0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -22.86 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -7.62 180)
+          (length 2.54)
+          (name "XTAL1/PB0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -10.16 180)
+          (length 2.54)
+          (name "XTAL2/PB1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -15.24 180)
+          (length 2.54)
+          (name "~{RESET}/PB3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -12.7 180)
+          (length 2.54)
+          (name "PB2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -2.54 180)
+          (length 2.54)
+          (name "PA7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 0 180)
+          (length 2.54)
+          (name "PA6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 2.54 180)
+          (length 2.54)
+          (name "PA5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 5.08 180)
+          (length 2.54)
+          (name "PA4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "power:+5V"
+      (power)
+      (pin_names
+        (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Value" "+5V"
+        (at 0 3.556 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Power symbol creates a global label with name \"+5V\""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "+5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "+5V_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          hide
+          (name "+5V"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "power:GND"
+      (power)
+      (pin_names
+        (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          hide
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "Connector_Generic:Conn_01x02"
+      (pin_names
+        (offset 1.016)
+        hide)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at 0 2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x02"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "Connector_Generic:Conn_01x03"
+      (pin_names
+        (offset 1.016)
+        hide)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at 0 5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x03"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "Conn_01x03_1_1"
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 3.81)
+          (end 1.27 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "Connector_Generic:Conn_01x04"
+      (pin_names
+        (offset 1.016)
+        hide)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at 0 5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Conn_01x04"
+        (at 0 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_fp_filters" "Connector*:*_1x??_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "Conn_01x04_1_1"
+        (rectangle
+          (start -1.27 -4.953)
+          (end 0 -5.207)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke
+            (width 0.1524)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.27 3.81)
+          (end 1.27 -6.35)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -5.08 0)
+          (length 3.81)
+          (name "Pin_4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "Connector:AVR-ISP-6"
+      (pin_names
+        (offset 1.016))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at -6.35 11.43 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "AVR-ISP-6"
+        (at 0 11.43 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at -6.35 1.27 90)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" " ~"
+        (at -32.385 -13.97 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "AVR ISP Connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Atmel 6-pin ISP connector"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_fp_filters" "IDC?Header*2x03* Pin?Header*2x03*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "AVR-ISP-6_0_1"
+        (rectangle
+          (start -2.667 -6.858)
+          (end -2.413 -7.62)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -2.667 10.16)
+          (end -2.413 9.398)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 7.62 -2.413)
+          (end 6.858 -2.667)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 7.62 0.127)
+          (end 6.858 -0.127)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 7.62 2.667)
+          (end 6.858 2.413)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 7.62 5.207)
+          (end 6.858 4.953)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 7.62 10.16)
+          (end -7.62 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "AVR-ISP-6_1_1"
+        (pin passive line
+          (at 10.16 5.08 180)
+          (length 2.54)
+          (name "MISO"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -2.54 12.7 270)
+          (length 2.54)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 10.16 0 180)
+          (length 2.54)
+          (name "SCK"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 10.16 2.54 180)
+          (length 2.54)
+          (name "MOSI"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 10.16 -2.54 180)
+          (length 2.54)
+          (name "~{RST}"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -2.54 -10.16 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "Device:R"
+      (pin_numbers hide)
+      (pin_names
+        (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "Device:C"
+      (pin_numbers hide)
+      (pin_names
+        (offset 0.254))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))))
+    (symbol "power:PWR_FLAG"
+      (power)
+      (pin_numbers hide)
+      (pin_names
+        (offset 0)
+        hide)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#FLG"
+        (at 0 1.905 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Value" "PWR_FLAG"
+        (at 0 3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_keywords" "flag power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (property "ki_description" "Special symbol for telling ERC where power comes from"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          hide))
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name "pwr"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))))
+  (symbol
+    (lib_id "MCU_Microchip_ATtiny:ATtiny84A-P")
+    (at 150 100 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8e7d8091-e592-4bf1-9110-4378a7ba2705")
+    (property "Reference" "U1"
+      (at 150 78 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "ATtiny84A-PU"
+      (at 150 122 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+      (at 150 100 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 150 100 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "3fa97d36-826e-4e73-a390-b05546e7cc4f"))
+    (pin "2"
+      (uuid "cbe384a7-186a-4d8f-85da-9e0b45c36928"))
+    (pin "3"
+      (uuid "d1b956c0-2dde-46f5-bcb8-ca512f027b47"))
+    (pin "4"
+      (uuid "e32a501b-dacc-46f0-b3fc-1e81c368c035"))
+    (pin "5"
+      (uuid "45b50359-ae56-42ec-8f4f-aa5cf3fe9d35"))
+    (pin "6"
+      (uuid "8f79b3f8-7fa0-4cdc-abe1-0fc91d873ada"))
+    (pin "7"
+      (uuid "a3655aee-e018-42da-b711-119b20fb8dc1"))
+    (pin "8"
+      (uuid "05f19427-af58-461c-acd4-61df7edfbc91"))
+    (pin "9"
+      (uuid "85490607-5b1b-428d-99e2-dee0bfc29057"))
+    (pin "10"
+      (uuid "6ce914d7-6aba-406d-883f-80fc09da5ada"))
+    (pin "11"
+      (uuid "f5f93442-df19-468c-8c5e-ba5669b64303"))
+    (pin "12"
+      (uuid "cba80a24-a124-44d2-a17d-af2c43b08180"))
+    (pin "13"
+      (uuid "70df6b29-20c3-412f-98a5-029122011287"))
+    (pin "14"
+      (uuid "0237e430-ae7c-4d2a-bf00-5697d64c529d"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "U1")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 150 77.14 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "aede48a4-8a29-4a46-9732-fbb09e466d8b")
+    (property "Reference" "#PWR01"
+      (at 150 77.14 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 150 72.14 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 150 77.14 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 150 77.14 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "2587ae8b-6e5f-47b5-afda-4b8133f4231f"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR01")
+          (unit 1)))))
+  (label "TB_B"
+    (at 165.24 92.38 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "fb07691b-6d43-4fe3-8b11-09e0a2c7bf61"))
+  (label "TB_A"
+    (at 165.24 89.84 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "c9a5774c-521c-4860-ad92-17b7b6af09e8"))
+  (label "HDD_B"
+    (at 165.24 87.3 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "5d088116-584e-4755-9d1c-b251f4ffbe5f"))
+  (label "HDD_A"
+    (at 165.24 84.76 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "35d0902a-0d90-4a63-b006-2436d4bddc3f"))
+  (symbol
+    (lib_id "power:GND")
+    (at 150 122.86 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "4fdcace0-ca06-42fc-86bb-24f3a964a17c")
+    (property "Reference" "#PWR02"
+      (at 150 122.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 150 127.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 150 122.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 150 122.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "3274bb92-1bd5-4c6c-a959-074482a7b264"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR02")
+          (unit 1)))))
+  (label "DATA_MCU"
+    (at 165.24 107.62 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "51385249-8669-4a6a-8a16-27786d7ff856"))
+  (no_connect
+    (at 165.24 110.16)
+    (uuid "92ece760-0b93-43b4-bcc4-783a9d5f01b0"))
+  (label "RST"
+    (at 165.24 115.24 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "22aa07c9-9c37-4a97-a01f-1586c16755cd"))
+  (label "PWM_R"
+    (at 165.24 112.7 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "82d62c7c-b750-4d2b-b4b0-c993d4770a90"))
+  (label "PWM_G"
+    (at 165.24 102.54 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "06975724-298a-4b25-b885-546cd1c7fe1c"))
+  (label "PWM_B"
+    (at 165.24 100 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "fb1c6755-f245-48b3-8425-f9b9e8a070a6"))
+  (label "MISO"
+    (at 165.24 97.46 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "9f7d3917-b34d-4540-b1f0-98f65bdc4945"))
+  (label "SCK"
+    (at 165.24 94.92 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f0f0c82b-8227-4a01-88e6-433323a1f421"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 30 40 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f215f224-a94a-4298-a5a7-4565c8d02e2c")
+    (property "Reference" "J1"
+      (at 30 31 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "+5V GND"
+      (at 30 49 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 30 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 30 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "b83eadf3-6fa1-4ddd-8e14-edaab91979cc"))
+    (pin "2"
+      (uuid "5a1b306e-89ed-4a7b-85f1-e89c0da9d979"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J1")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 24.92 40 270)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "4d9703dc-be78-4986-84ca-70af201ed925")
+    (property "Reference" "#PWR03"
+      (at 24.92 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 19.92 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 24.92 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 24.92 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "07575f86-ac06-4612-a77c-7f8f0235d129"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR03")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 24.92 42.54 90)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "249b26d2-f12e-421a-ad46-d2f2d6e5817e")
+    (property "Reference" "#PWR04"
+      (at 24.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 19.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 24.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 24.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "a72d2465-280e-45d7-8813-47ed1e2d31f8"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR04")
+          (unit 1)))))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 30 80 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "58bca482-40bc-4060-b9ef-b7fd3be0fd5f")
+    (property "Reference" "J2"
+      (at 30 71 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "HDD"
+      (at 30 89 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 30 80 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 30 80 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "4b78940a-80e3-4716-a201-d1660b1fe3e3"))
+    (pin "2"
+      (uuid "fadf4a9b-775e-4a25-8044-e577b9a0de20"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J2")
+          (unit 1)))))
+  (label "HDD_A_IN"
+    (at 24.92 80 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "38334702-606c-45b7-b6cf-413cc1ac7461"))
+  (label "HDD_B_IN"
+    (at 24.92 82.54 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "5cbbd795-5355-44a4-9df1-7dcf7a49f102"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 30 120 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "da01fa93-4558-496b-84e6-2887135d9f28")
+    (property "Reference" "J3"
+      (at 30 111 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TURBO"
+      (at 30 129 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 30 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 30 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "a0f982cb-1da6-4b78-801c-33560d63355a"))
+    (pin "2"
+      (uuid "7176de30-9e90-45b6-8e00-1e463e6ff6f9"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J3")
+          (unit 1)))))
+  (label "TB_A_IN"
+    (at 24.92 120 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "24effa61-a98b-45dd-80b1-a4ddbd054eda"))
+  (label "TB_B_IN"
+    (at 24.92 122.54 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "d55d810d-80f9-4a8c-9258-34887a7d05bf"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 30 160 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6b1f6877-e6a6-4332-ba5b-b195973dadb1")
+    (property "Reference" "J4"
+      (at 30 151 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "SW IN"
+      (at 30 169 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 30 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 30 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "67756add-9404-4102-bbaf-b8379dfb5233"))
+    (pin "2"
+      (uuid "fe8d1996-9831-4857-8fcf-246cc7e9a5c6"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J4")
+          (unit 1)))))
+  (label "SW1"
+    (at 24.92 160 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "1b6f4d5d-b995-43f6-8ccc-915210b10a6e"))
+  (label "SW2"
+    (at 24.92 162.54 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "f10ff466-8ef9-4bad-82a5-7948f032e58a"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x02")
+    (at 60 160 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f612276d-a152-4250-813c-bc4201eca81f")
+    (property "Reference" "J5"
+      (at 60 151 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "SW OUT"
+      (at 60 169 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+      (at 60 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 60 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "edd97572-0281-4348-b47c-9218907805e7"))
+    (pin "2"
+      (uuid "252dc270-4745-48eb-857f-e42fd5d4ef87"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J5")
+          (unit 1)))))
+  (label "SW1"
+    (at 54.92 160 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "7ea71d5d-856a-4954-b139-51222765c76e"))
+  (label "SW2"
+    (at 54.92 162.54 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "11ef1828-42c6-48e7-a9eb-9d96cbe8cf73"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x03")
+    (at 260 40 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "33cf9886-a9fb-4e98-9473-930bd70f3f41")
+    (property "Reference" "J6"
+      (at 260 31 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "ADDR LED (5V DATA GND)"
+      (at 260 49 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+      (at 260 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 260 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "e4072d78-2b25-4af2-b112-4abc66da7cb8"))
+    (pin "2"
+      (uuid "a66c182f-9aa8-40ef-9156-340640376d65"))
+    (pin "3"
+      (uuid "35e7f5cc-52f9-4829-844c-68616743a6e2"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J6")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 254.92 37.46 270)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "077b8eae-7df6-4eb0-b093-f16c37f8e6a5")
+    (property "Reference" "#PWR05"
+      (at 254.92 37.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 249.92 37.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 254.92 37.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 254.92 37.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "8d21695a-bab2-4d2b-99b1-2224aab33502"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR05")
+          (unit 1)))))
+  (label "DATA"
+    (at 254.92 40 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "45fd56c2-7a76-446f-9b7d-b5215425d68b"))
+  (symbol
+    (lib_id "power:GND")
+    (at 254.92 42.54 90)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "677b4e65-0c58-46bf-8768-c761eff03494")
+    (property "Reference" "#PWR06"
+      (at 254.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 249.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 254.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 254.92 42.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "4f723918-3474-4984-b85b-20effdfbce32"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR06")
+          (unit 1)))))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x04")
+    (at 260 90 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d7af282b-5bf4-48b5-93da-830cf91b18a3")
+    (property "Reference" "J7"
+      (at 260 81 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "RGB LED (COM R G B)"
+      (at 260 99 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+      (at 260 90 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 260 90 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "4fef65d1-841d-4e18-9da1-4b4c0b528fe2"))
+    (pin "2"
+      (uuid "1ee2aa3e-157b-4728-b011-e098f731ba9a"))
+    (pin "3"
+      (uuid "4cbce469-41a3-434f-9525-7f295ea98ad0"))
+    (pin "4"
+      (uuid "aa1f8163-8b95-49b5-85ac-fd246ef9132e"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J7")
+          (unit 1)))))
+  (label "COM"
+    (at 254.92 87.46 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "65398bed-637b-408e-98d4-dade91890146"))
+  (label "LED_R"
+    (at 254.92 90 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "71b6cf8e-6b0f-4443-9af7-a88e951f7828"))
+  (label "LED_G"
+    (at 254.92 92.54 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "e82d4184-1eeb-4dd8-9da3-286953bc5a99"))
+  (label "LED_B"
+    (at 254.92 95.08 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "416b1a82-48f6-4dc6-aa49-0002a371e679"))
+  (symbol
+    (lib_id "Connector_Generic:Conn_01x03")
+    (at 260 140 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "762c1ebf-fcfb-4541-8f61-c28ef72a905a")
+    (property "Reference" "JP1"
+      (at 260 131 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "COM: 5V=anode GND=cathode"
+      (at 260 149 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+      (at 260 140 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 260 140 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "17a59867-cc0e-4a6a-910a-ea495c12cc84"))
+    (pin "2"
+      (uuid "54a42b51-7aa4-4f2e-a8eb-47b95b1118b5"))
+    (pin "3"
+      (uuid "56bdef2a-bc85-4e0d-a66b-68d801c0a3e8"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "JP1")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 254.92 137.46 270)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "404da25c-0eb5-42c9-afc8-9f27e35ebf82")
+    (property "Reference" "#PWR07"
+      (at 254.92 137.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 249.92 137.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 254.92 137.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 254.92 137.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "2ed23a96-5073-412a-be37-0b9e9a8d049e"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR07")
+          (unit 1)))))
+  (label "COM"
+    (at 254.92 140 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "e133031a-0637-4f0b-8ead-5bfbc1cfbe79"))
+  (symbol
+    (lib_id "power:GND")
+    (at 254.92 142.54 90)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "bb332650-07d0-4b21-a268-506110adbd5d")
+    (property "Reference" "#PWR08"
+      (at 254.92 142.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 249.92 142.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 254.92 142.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 254.92 142.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "61211658-e352-4040-a454-4c2b9059b96f"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR08")
+          (unit 1)))))
+  (symbol
+    (lib_id "Connector:AVR-ISP-6")
+    (at 210 160 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2614c68c-10b1-47a4-9696-411a71f466a2")
+    (property "Reference" "J8"
+      (at 210 151 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "ISP"
+      (at 210 169 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
+      (at 210 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 210 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "fef81cf2-b2d3-4b96-a114-1133a70dac55"))
+    (pin "2"
+      (uuid "8bdddb8b-9425-43ee-915d-2b1697e4a3a1"))
+    (pin "3"
+      (uuid "3b514767-e59f-4375-b7f3-ab65322036cf"))
+    (pin "4"
+      (uuid "2d14a216-8ca2-470f-bc59-312ee71a2f5d"))
+    (pin "5"
+      (uuid "e0665021-e702-4750-89cc-ad9204611e82"))
+    (pin "6"
+      (uuid "22df9d26-9d85-4a62-a38c-35517ee114c8"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "J8")
+          (unit 1)))))
+  (label "MISO"
+    (at 220.16 154.92 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "e9c7bbbd-e89d-475c-863b-d08223b9e33c"))
+  (symbol
+    (lib_id "power:+5V")
+    (at 207.46 147.3 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "3b98e231-bd27-454a-8b92-1b6aaa52bb20")
+    (property "Reference" "#PWR09"
+      (at 207.46 147.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 207.46 142.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 207.46 147.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 207.46 147.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "2fccc4f5-d296-4ea0-999f-6c4ec0786847"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR09")
+          (unit 1)))))
+  (label "SCK"
+    (at 220.16 160 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "ba385521-b265-490f-9ccf-3273a02e05a1"))
+  (label "PWM_B"
+    (at 220.16 157.46 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "57a0487c-5ced-428a-9dca-5607f4d18632"))
+  (label "RST"
+    (at 220.16 162.54 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "97d82c8d-f1c2-4be3-9134-aa80be5cc60a"))
+  (symbol
+    (lib_id "power:GND")
+    (at 207.46 170.16 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "a3d157ec-3a33-4ed6-b629-ccac892c3a21")
+    (property "Reference" "#PWR10"
+      (at 207.46 170.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 207.46 175.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 207.46 170.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 207.46 170.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "5014fe41-780a-42ce-a735-9841a6b3cebd"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR10")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R")
+    (at 70 60 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bc398030-6756-42c6-8424-beeb6ec45e74")
+    (property "Reference" "R1"
+      (at 72.5 58.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "4k7"
+      (at 72.5 61.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 70 60 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 70 60 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "58b417cc-87aa-46fc-9a92-314e151ff388"))
+    (pin "2"
+      (uuid "4f289b1b-c708-4170-a97f-ca438ca7c681"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R1")
+          (unit 1)))))
+  (label "HDD_A_IN"
+    (at 70 56.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f2085a07-99f0-4611-a5c9-1f82bda030f0"))
+  (label "HDD_B_IN"
+    (at 70 63.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "6da240f3-6663-466d-8be5-e9ae1898872d"))
+  (symbol
+    (lib_id "Device:R")
+    (at 85 60 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e6a0550d-9556-4d29-b8dc-36cb310da8e3")
+    (property "Reference" "R2"
+      (at 87.5 58.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "1k"
+      (at 87.5 61.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 85 60 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 85 60 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "eb173ac0-391d-45fa-9cb5-b290a041495f"))
+    (pin "2"
+      (uuid "d89f5273-5025-4996-a654-dd4c2b4fdaad"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R2")
+          (unit 1)))))
+  (label "HDD_A_IN"
+    (at 85 56.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "1b76ee11-3aa6-4642-95be-db25daf1a8a6"))
+  (label "HDD_A"
+    (at 85 63.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "94726256-6e16-4a5d-9e31-4c6a72fb6cd2"))
+  (symbol
+    (lib_id "Device:R")
+    (at 100 60 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ee143fcd-2e05-429a-8be0-36b7eadc6aee")
+    (property "Reference" "R3"
+      (at 102.5 58.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "1k"
+      (at 102.5 61.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 100 60 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 100 60 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "365212ff-91dc-4191-819c-9f45c66a820e"))
+    (pin "2"
+      (uuid "eec0e0b8-a5c0-4180-b319-6ce2f6b19ff9"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R3")
+          (unit 1)))))
+  (label "HDD_B_IN"
+    (at 100 56.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "7070e015-c998-4781-a18f-89aa30f55762"))
+  (label "HDD_B"
+    (at 100 63.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "f6ee8cd2-468f-4f16-ade3-29462849c5bb"))
+  (symbol
+    (lib_id "Device:R")
+    (at 70 120 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "595ee34f-0be0-41a7-964e-38d2acedc8be")
+    (property "Reference" "R4"
+      (at 72.5 118.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "4k7"
+      (at 72.5 121.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 70 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 70 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "548db466-9a8b-4a11-8108-31631ef0571c"))
+    (pin "2"
+      (uuid "19e67815-2310-49c6-b0ce-2097dd1f873b"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R4")
+          (unit 1)))))
+  (label "TB_A_IN"
+    (at 70 116.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f59f4e60-600a-4883-982d-80bb799f61ab"))
+  (label "TB_B_IN"
+    (at 70 123.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "7ce9c34a-0052-4d01-be64-1107ec338a69"))
+  (symbol
+    (lib_id "Device:R")
+    (at 85 120 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8e5c1b60-10d9-490a-b791-12511bc2db0a")
+    (property "Reference" "R5"
+      (at 87.5 118.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "1k"
+      (at 87.5 121.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 85 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 85 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "27f614f8-5c37-49e4-8694-ece8b74aee2e"))
+    (pin "2"
+      (uuid "a83c7cd7-03ca-46bb-9c66-0c71c32ade52"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R5")
+          (unit 1)))))
+  (label "TB_A_IN"
+    (at 85 116.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "406c1e2c-8cc3-457d-b71e-efd6d873cf63"))
+  (label "TB_A"
+    (at 85 123.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "219b666a-606a-49ec-b975-dff649944545"))
+  (symbol
+    (lib_id "Device:R")
+    (at 100 120 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "555c6757-3e64-47cf-8432-1e9ff5ebb5d9")
+    (property "Reference" "R6"
+      (at 102.5 118.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "1k"
+      (at 102.5 121.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 100 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 100 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "5f01b3bf-2cd7-4b54-a2fb-1bba36130952"))
+    (pin "2"
+      (uuid "8d626633-150e-471e-9d62-0c077d4cf10b"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R6")
+          (unit 1)))))
+  (label "TB_B_IN"
+    (at 100 116.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "3db015b8-5d2a-4179-bb75-49f296e54d20"))
+  (label "TB_B"
+    (at 100 123.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "d3d832ac-3ff6-44f6-a8a1-434c6795e750"))
+  (symbol
+    (lib_id "Device:R")
+    (at 200 40 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "dd3ebf41-6ac6-4b9d-9be5-d221d03a7f2d")
+    (property "Reference" "R7"
+      (at 202.5 38.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "10k"
+      (at 202.5 41.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 200 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 200 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "458ff6e1-c3f3-4b6b-9a55-f45a7d7abc4f"))
+    (pin "2"
+      (uuid "addff779-fe42-4cc4-b855-053930c48146"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R7")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 200 36.19 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "7ef3575f-f508-432c-ad14-ce34efdc6a10")
+    (property "Reference" "#PWR11"
+      (at 200 36.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 200 31.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 200 36.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 200 36.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "907c5b2a-f88a-4696-9e6a-23071c973268"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR11")
+          (unit 1)))))
+  (label "RST"
+    (at 200 43.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "274f02df-48d5-455d-9e3b-84b250d2fe73"))
+  (symbol
+    (lib_id "Device:R")
+    (at 215 40 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6a5b4da2-3bdb-4076-9949-05778d38409f")
+    (property "Reference" "R8"
+      (at 217.5 38.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "330"
+      (at 217.5 41.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 215 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 215 40 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "40147e10-beac-4afb-8c3e-eb0ed8c010d3"))
+    (pin "2"
+      (uuid "ca610ab4-9af7-45ae-a40c-2b81a5b01d2c"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R8")
+          (unit 1)))))
+  (label "DATA_MCU"
+    (at 215 36.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "653c7876-0ba3-42dc-9371-17a767d3161b"))
+  (label "DATA"
+    (at 215 43.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "b64291a4-65bf-4681-9de6-31f03d72f030"))
+  (symbol
+    (lib_id "Device:R")
+    (at 215 80 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fba95f99-5566-443f-8c64-8242405071dd")
+    (property "Reference" "R9"
+      (at 217.5 78.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "150 (opt.)"
+      (at 217.5 81.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 215 80 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 215 80 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "7c0651fb-9f84-4349-b4b1-b20cee6bfb22"))
+    (pin "2"
+      (uuid "25a49479-e5a5-4744-993a-8faebc15d0be"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R9")
+          (unit 1)))))
+  (label "PWM_R"
+    (at 215 76.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "08b3c266-e0aa-4348-8f06-51043cd5646b"))
+  (label "LED_R"
+    (at 215 83.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "5815cdda-636d-4855-a0be-894fb3b1f5ae"))
+  (symbol
+    (lib_id "Device:R")
+    (at 215 100 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cbe8fbb2-46bb-420c-a904-dd348bdd5198")
+    (property "Reference" "R10"
+      (at 217.5 98.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100 (opt.)"
+      (at 217.5 101.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 215 100 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 215 100 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "6f037345-d71d-4747-9a0a-52cb357ebc5a"))
+    (pin "2"
+      (uuid "cf49f666-ce1f-444a-9460-5ab8680b31a2"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R10")
+          (unit 1)))))
+  (label "PWM_G"
+    (at 215 96.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "97e63f82-3380-4ea8-b024-6f52c5d78b93"))
+  (label "LED_G"
+    (at 215 103.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "2c91f616-452e-4386-acc3-62318ea86e02"))
+  (symbol
+    (lib_id "Device:R")
+    (at 215 120 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "96653262-f45c-4bdf-b393-bab10041ddad")
+    (property "Reference" "R11"
+      (at 217.5 118.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100 (opt.)"
+      (at 217.5 121.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+      (at 215 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 215 120 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "167ea128-be94-4b56-85ba-ca4939d2774a"))
+    (pin "2"
+      (uuid "accdc102-893d-4508-a32e-266ea1e62c7b"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "R11")
+          (unit 1)))))
+  (label "PWM_B"
+    (at 215 116.19 90)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "6f9da2ec-f71b-4b54-a6f9-c46cfaf36105"))
+  (label "LED_B"
+    (at 215 123.81 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "2edbf5cb-a4b8-4e12-83ea-6350faab3ab7"))
+  (symbol
+    (lib_id "Device:C")
+    (at 120 160 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "46b93a3b-ce33-4c94-bf32-6a12c405d357")
+    (property "Reference" "C1"
+      (at 122.5 158.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100n"
+      (at 122.5 161.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+      (at 120 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 120 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "84d028b9-f369-4635-b057-622172770c82"))
+    (pin "2"
+      (uuid "1c4d6209-8970-49a2-89ec-366b918ed342"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "C1")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 120 156.19 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "bf3f5d83-7cef-452e-8271-720954b96ea5")
+    (property "Reference" "#PWR12"
+      (at 120 156.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 120 151.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 120 156.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 120 156.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "ac179aeb-181f-471e-8a46-74386a3f1987"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR12")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 120 163.81 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "3c9dbfa1-d376-4aab-961e-55e7c901bae1")
+    (property "Reference" "#PWR13"
+      (at 120 163.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 120 168.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 120 163.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 120 163.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "93af3fd4-e92d-403c-b153-00dd487fa5ac"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR13")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C")
+    (at 140 160 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e485af17-62f9-44af-8ce7-4bcee99cf9d7")
+    (property "Reference" "C2"
+      (at 142.5 158.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100n"
+      (at 142.5 161.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+      (at 140 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 140 160 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "3eb98700-08e2-47f9-8dba-3d9d665eedc9"))
+    (pin "2"
+      (uuid "dc2fc1cc-3e33-4105-a45e-47498bdb7aa1"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "C2")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 140 156.19 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "1c6b847e-2446-4297-b66b-d2a21f0c94c7")
+    (property "Reference" "#PWR14"
+      (at 140 156.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 140 151.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 140 156.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 140 156.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "14f70eca-d113-472f-86f0-77e67ecd9675"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR14")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 140 163.81 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "5eae3720-73af-418f-809e-566b1b698111")
+    (property "Reference" "#PWR15"
+      (at 140 163.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 140 168.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 140 163.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 140 163.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "5ecc8242-04a2-4c4d-97ca-dfca504e16ac"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR15")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 30 15 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "00bf2a8d-015e-4b5d-9ebd-940d04daa601")
+    (property "Reference" "#FLG01"
+      (at 30 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "PWR_FLAG"
+      (at 30 19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 30 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 30 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "817eabb4-32d7-4d3c-a412-a2d44ba30cfe"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#FLG01")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+5V")
+    (at 30 15 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "bc324b9c-21a3-447b-9303-1d1934fcd457")
+    (property "Reference" "#PWR17"
+      (at 30 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "+5V"
+      (at 30 10 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 30 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 30 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "e83f1dcd-4ffc-491a-ab1e-882c955fcae5"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR17")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 50 15 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "f95260ad-0854-440c-b63e-943735aa3a63")
+    (property "Reference" "#FLG02"
+      (at 50 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "PWR_FLAG"
+      (at 50 19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 50 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 50 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "3f17fa06-9e71-4181-861b-ea003863d7a6"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#FLG02")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 50 15 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "2a11a117-12a0-424b-b8d8-ef72b35a4410")
+    (property "Reference" "#PWR19"
+      (at 50 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Value" "GND"
+      (at 50 20 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 50 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (property "Datasheet" "~"
+      (at 50 15 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        hide))
+    (pin "1"
+      (uuid "448e7efa-bd16-455b-a046-7c5becf9ab67"))
+    (instances
+      (project "xt-at-pc-rgb-led-v2"
+        (path "/1efdde9d-0a74-4f3c-8610-341fa81995a9"
+          (reference "#PWR19")
+          (unit 1)))))
+  (text "Inputs: a signal is active when its two header pins differ (load resistor R1/R4 in place of the original LED).\nJ6 addressable LED (APA106/PL9823/WS2812B), J7 plain RGB LED or RGB button, R9-R11 only when J7 is used.\nJP1: COM to +5V for common anode, to GND for common cathode. J8 standard 6-pin AVR ISP.\ngithub.com/sfambach/XT-AT-PC-RGB-LED - fambach.net"
+    (at 30 185 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "1f582c3a-065a-4b17-8971-013f163768d1"))
+  (sheet_instances
+    (path "/"
+      (page "1"))))

@@ -25,9 +25,15 @@ It plugs into the normal mainboard headers (power LED, HDD LED, turbo LED). Two 
 
 Details, variants and simulation results: [docs/concept.md](docs/concept.md)
 
-## Version 2
+## Versions
 
-ATtiny84 board for an addressable LED and/or a plain RGB LED or RGB button, colours from a config file, no measuring of the headers needed: [v2/](v2/README.md)
+| Version | What | Status |
+|---|---|---|
+| **v1** | discrete, no microcontroller, through-hole board ([hardware/v1](hardware/v1)) | simulated, board designed |
+| **v2** | ATtiny84 board for an addressable LED and/or a plain RGB LED or RGB button, colours from a config file, no measuring of the headers needed ([v2/](v2/README.md), [hardware/v2](hardware/v2)) | firmware compiled, board designed |
+| v3 | full SMD version | planned |
+
+Simulation (ngspice): [sim/](sim/), transient plot `sim/three_states_tran.png`.
 
 ## Parts
 

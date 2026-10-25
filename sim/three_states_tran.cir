@@ -1,0 +1,36 @@
+* XT-AT-PC-RGB-LED v1 - transient: power, turbo and HDD over 10 ms
+* ngspice -b three_states_tran.cir  -> writes three_states_tran.txt (time, inputs, LED currents)
+* Same circuit as three_states.cir; the open collector outputs are switches driven by PWL sources.
+.model INGAN D(IS=1e-19 N=3 RS=10)
+.model BLUE D(IS=1.6e-19 N=3 RS=10)
+.model RED D(IS=1.9e-19 N=2 RS=10)
+.model D4148 D(IS=2.5n N=1.75 RS=0.6)
+.model BC547 NPN(IS=1.8e-14 BF=300 VAF=60 RB=10 RC=1 RE=0.2 BR=7)
+.model OC SW(VT=2.5 VH=0.1 RON=20 ROFF=10Meg)
+V5 5 0 5
+Rp 5 A 330
+Vg A ga 0
+Dg ga g INGAN
+Vb A ba 0
+Db ba h BLUE
+Vr A ra 0
+Dr ra rk RED
+Q1 g x1 e1 BC547
+D4 e1 0 D4148
+R1 A x1 10k
+D1 x1 h D4148
+D2 x1 t D4148
+Q2 rk x2 e2 BC547
+D5 e2 t D4148
+R2 A x2 10k
+D3 x2 h D4148
+* control: 5 V = output active (pulls to GND)
+Vhdd chdd 0 PWL(0 0 2m 0 2.01m 5 2.5m 5 2.51m 0 5m 0 5.01m 5 6m 5 6.01m 0 8.5m 0 8.51m 5 9m 5 9.01m 0)
+Vtb  ctb  0 PWL(0 0 3.5m 0 3.51m 5 7.5m 5 7.51m 0)
+Shdd h 0 chdd 0 OC
+Stb  t 0 ctb 0 OC
+.control
+tran 10u 10m
+wrdata three_states_tran.txt v(chdd) v(ctb) i(vg) i(vb) i(vr)
+.endc
+.end
