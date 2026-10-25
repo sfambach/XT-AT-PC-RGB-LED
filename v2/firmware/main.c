@@ -1,12 +1,16 @@
 /*
- * XT-AT-PC-RGB-LED v2 - one addressable RGB LED for power, turbo and HDD
+ * XT-AT-PC-RGB-LED v2 - one RGB LED for power, turbo and HDD
  * Copyright (C) 2026 Stefan Fambach (SteFam), https://www.fambach.net
  * License: PolyForm Noncommercial 1.0.0, see ../LICENSE.md
  *
- * ATtiny85 @ 8 MHz or ATtiny13A @ 9.6 MHz, internal oscillator.
- *   PB0  LED data (WS2812 / APA106 / PL9823)
- *   PB1  HDD header pin A      PB2  HDD header pin B
- *   PB3  TURBO header pin A    PB4  TURBO header pin B
+ * Internal oscillator: ATtiny84 / ATtiny85 @ 8 MHz, ATtiny13A @ 9.6 MHz.
+ *
+ * ATtiny85 / ATtiny13A (addressable LED only)
+ *   PB0 LED data   PB1/PB2 HDD header pins A/B   PB3/PB4 TURBO header pins A/B
+ *
+ * ATtiny84 (addressable LED and plain RGB LED at the same time)
+ *   PB0 LED data   PA0/PA1 HDD header pins A/B   PA2/PA3 TURBO header pins A/B
+ *   PB2 (OC0A) red   PA7 (OC0B) green   PA6 (OC1A) blue
  *
  * Each header gets a load resistor between its two pins. A signal is active
  * when its two pins differ, so neither the header polarity nor the switching
@@ -18,9 +22,27 @@
 #include <util/delay.h>
 #include "config.h"
 
-#define LED_BIT   _BV(PB0)
-#define INPUTS    (_BV(PB1) | _BV(PB2) | _BV(PB3) | _BV(PB4))
+#define LED_BIT    _BV(PB0)
 #define REFRESH_MS 500
+
+#if defined(__AVR_ATtiny84__) || defined(__AVR_ATtiny84A__)
+#define HAS_RGB_OUTPUT 1
+#define INPUT_PIN  PINA
+#define INPUT_PORT PORTA
+#define HDD_A PA0
+#define HDD_B PA1
+#define TURBO_A PA2
+#define TURBO_B PA3
+#else
+#define HAS_RGB_OUTPUT 0
+#define INPUT_PIN  PINB
+#define INPUT_PORT PORTB
+#define HDD_A PB1
+#define HDD_B PB2
+#define TURBO_A PB3
+#define TURBO_B PB4
+#endif
+#define INPUTS (_BV(HDD_A) | _BV(HDD_B) | _BV(TURBO_A) | _BV(TURBO_B))
 
 static struct config cfg;
 
@@ -49,6 +71,49 @@ static uint8_t scale(uint8_t channel)
     return (uint16_t)channel * (cfg.brightness + 1) >> 8;
 }
 
+#if HAS_RGB_OUTPUT
+/*
+ * Hardware PWM, 8 bit, ~3.9 kHz. Common anode is driven inverted (low = on).
+ * A channel at 0 is disconnected from the timer and held at its off level,
+ * because fast PWM never reaches a duty of exactly 0.
+ */
+static void pwm_init(void)
+{
+    if (cfg.rgb_output == RGB_NONE)
+        return;
+    if (cfg.rgb_output == RGB_COMMON_ANODE) {
+        PORTB |= _BV(PB2);
+        PORTA |= _BV(PA7) | _BV(PA6);
+    }
+    DDRB |= _BV(PB2);
+    DDRA |= _BV(PA7) | _BV(PA6);
+    TCCR0A = _BV(WGM01) | _BV(WGM00);
+    TCCR0B = _BV(CS01);
+    TCCR1A = _BV(WGM10);
+    TCCR1B = _BV(WGM12) | _BV(CS11);
+}
+
+static uint8_t com_bits(uint8_t value, uint8_t com1, uint8_t com0)
+{
+    if (value == 0)
+        return 0;
+    return cfg.rgb_output == RGB_COMMON_ANODE ? (com1 | com0) : com1;
+}
+
+static void pwm_show(uint8_t r, uint8_t g, uint8_t b)
+{
+    if (cfg.rgb_output == RGB_NONE)
+        return;
+    OCR0A = r - 1;
+    OCR0B = g - 1;
+    OCR1A = b - 1;
+    TCCR0A = _BV(WGM01) | _BV(WGM00) |
+             com_bits(r, _BV(COM0A1), _BV(COM0A0)) |
+             com_bits(g, _BV(COM0B1), _BV(COM0B0));
+    TCCR1A = _BV(WGM10) | com_bits(b, _BV(COM1A1), _BV(COM1A0));
+}
+#endif
+
 static void show(const uint8_t rgb[3])
 {
     uint8_t r = scale(rgb[0]), g = scale(rgb[1]), b = scale(rgb[2]);
@@ -63,6 +128,9 @@ static void show(const uint8_t rgb[3])
         send_byte(b, hi, lo);
     }
     sei();
+#if HAS_RGB_OUTPUT
+    pwm_show(r, g, b);
+#endif
     _delay_us(80); /* latch */
 }
 
@@ -82,8 +150,11 @@ int main(void)
     uint16_t hdd_hold = 0, refresh = 0;
 
     DDRB = LED_BIT;
-    PORTB = INPUTS; /* pull-ups keep unconnected header pairs equal */
+    INPUT_PORT = INPUTS; /* pull-ups keep unconnected header pairs equal */
     load_config();
+#if HAS_RGB_OUTPUT
+    pwm_init();
+#endif
 
     for (uint8_t i = 0; i < 3; i++) {
         uint16_t sum = cfg.power[i] + cfg.turbo[i];
@@ -92,9 +163,9 @@ int main(void)
     _delay_ms(50);
 
     for (;;) {
-        uint8_t pins = PINB;
-        uint8_t hdd = ((pins >> PB1) ^ (pins >> PB2)) & 1;
-        uint8_t turbo = ((pins >> PB3) ^ (pins >> PB4)) & 1;
+        uint8_t pins = INPUT_PIN;
+        uint8_t hdd = ((pins >> HDD_A) ^ (pins >> HDD_B)) & 1;
+        uint8_t turbo = ((pins >> TURBO_A) ^ (pins >> TURBO_B)) & 1;
 
         /* short HDD pulses would be invisible, stretch them */
         if (hdd)

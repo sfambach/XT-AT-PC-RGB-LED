@@ -6,7 +6,7 @@
 import configparser
 import sys
 
-MAGIC, VERSION = 0xA5, 1
+MAGIC, VERSION = 0xA5, 2
 
 
 def colour(text):
@@ -37,6 +37,8 @@ def build(ini):
     ]
     for name in ("power", "turbo", "hdd"):
         data += colour(ini.get("colours", name))
+    rgb = ini.get("led", "rgb_output", fallback="common_anode").strip().lower()
+    data.append({"none": 0, "common_anode": 1, "common_cathode": 2}[rgb])
     return data
 
 

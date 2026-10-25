@@ -27,7 +27,7 @@ Details, variants and simulation results: [docs/concept.md](docs/concept.md)
 
 ## Version 2
 
-ATtiny85 + addressable RGB LED, colours from a config file, no measuring of the headers needed: [v2/](v2/README.md)
+ATtiny84 board for an addressable LED and/or a plain RGB LED or RGB button, colours from a config file, no measuring of the headers needed: [v2/](v2/README.md)
 
 ## Parts
 
