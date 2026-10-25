@@ -1,0 +1,43 @@
+* RGB status LED - power (green), turbo (red), HDD (blue, priority)
+* ngspice -b three_states.cir
+* LED models are rough fits: InGaN green/blue ~3.0 V, red ~2.0 V @ 10 mA
+.model INGAN D(IS=1e-19 N=3 RS=10)
+.model BLUE D(IS=1.6e-19 N=3 RS=10)
+.model RED D(IS=1.9e-19 N=2 RS=10)
+.model D4148 D(IS=2.5n N=1.75 RS=0.6)
+.model BC547 NPN(IS=1.8e-14 BF=300 VAF=60 RB=10 RC=1 RE=0.2 BR=7)
+V5 5 0 5
+* Rp = mainboard series resistor on PLED+ (or R0 if the board has none)
+Rp 5 A 330
+Vg A ga 0
+Dg ga g INGAN
+Vb A ba 0
+Db ba h BLUE
+Vr A ra 0
+Dr ra rk RED
+* green: Q1 on unless HDD- or TURBO- pulls X1 down; D4 raises the threshold above one diode drop
+Q1 g x1 e1 BC547
+D4 e1 0 D4148
+R1 A x1 10k
+D1 x1 h D4148
+D2 x1 t D4148
+* red: Q2 switches red to TURBO-, HDD- pulls X2 down
+Q2 rk x2 e2 BC547
+D5 e2 t D4148
+R2 A x2 10k
+D3 x2 h D4148
+* open collector inputs: 10 Meg = idle, 20 ohm = active
+Rsw h 0 10Meg
+Rt t 0 10Meg
+.control
+foreach hdd 10Meg 20
+  foreach tb 10Meg 20
+    alter Rsw $hdd
+    alter Rt $tb
+    op
+    echo "HDD- = $hdd ohm, TURBO- = $tb ohm (mA: green blue red)"
+    print i(vg)*1000 i(vb)*1000 i(vr)*1000
+  end
+end
+.endc
+.end

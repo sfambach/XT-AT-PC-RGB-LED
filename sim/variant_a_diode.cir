@@ -1,0 +1,23 @@
+* RGB status LED - variant A (one diode in series with green), ngspice: ngspice -b variant_a_diode.cir
+* Works only with an InGaN green (Vf ~3 V). Replace INGAN by GAP below to see it fail.
+.model INGAN D(IS=1e-19 N=3 RS=10)
+.model BLUE D(IS=1.6e-19 N=3 RS=10)
+.model GAP D(IS=2.8e-20 N=2 RS=10)
+.model D4148 D(IS=2.5n N=1.75 RS=0.6)
+V5 5 0 5
+Rp 5 A 330
+Vg A ga 0
+Dg ga g INGAN
+Dd g 0 D4148
+Vb A ba 0
+Db ba h BLUE
+Rsw h 0 10Meg
+.control
+foreach r 10Meg 40 20
+  alter Rsw $r
+  op
+  echo "HDD- switch = $r ohm"
+  print i(vg)*1000 i(vb)*1000 v(a) v(h)
+end
+.endc
+.end

@@ -1,0 +1,27 @@
+* RGB status LED - variant C (1 NPN, 2 resistors), ngspice: ngspice -b variant_c_transistor.cir
+* LED models are rough fits: InGaN green/blue ~3.0 V @ 10 mA, GaP green ~2.1 V @ 10 mA
+.model INGAN D(IS=1e-19 N=3 RS=10)
+.model BLUE D(IS=1.6e-19 N=3 RS=10)
+.model GAP D(IS=2.8e-20 N=2 RS=10)
+.model BC547 NPN(IS=1.8e-14 BF=300 VAF=60 RB=10 RC=1 RE=0.2 BR=7)
+V5 5 0 5
+* Rp = mainboard series resistor on PLED+ (or R0 if the board has none)
+Rp 5 A 330
+Vg A ga 0
+Dg ga g INGAN
+Vb A ba 0
+Db ba h BLUE
+Q1 g b 0 BC547
+R1 A b 22k
+R2 b h 1k
+* HDD- open collector: 10 Meg = idle, 20 ohm = active (Vol ~0.1 V), 40 ohm = weak driver
+Rsw h 0 10Meg
+.control
+foreach r 10Meg 40 20
+  alter Rsw $r
+  op
+  echo "HDD- switch = $r ohm"
+  print i(vg)*1000 i(vb)*1000 v(a) v(h)
+end
+.endc
+.end
