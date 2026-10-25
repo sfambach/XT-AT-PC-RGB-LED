@@ -63,7 +63,7 @@ V1 = dict(
          'R0 only if PLED+ has no series resistor on the mainboard, otherwise bridge.\n'
          'github.com/sfambach/XT-AT-PC-RGB-LED - fambach.net',
     power=['GND'],
-    board=(98.8, 100, 142.8, 125.5),
+    board=(98.8, 99.0, 142.8, 125.5),
     parts=V1_PARTS, place=V1_PLACE,
     texts=[('PLED + -', gx(0.5), 100.9, 0.8), ('HDD + -', gx(3.5), 100.9, 0.8), ('TURBO + -', gx(6.5), 100.9, 0.8),
            ('A R G B', gx(1.5), 123.75, 0.8), ('SW IN', gx(5.5), 123.75, 0.8), ('SW OUT', gx(8.5), 123.75, 0.8)],
@@ -119,7 +119,7 @@ V2 = dict(
          'JP1: COM to +5V for common anode, to GND for common cathode. J8 standard 6-pin AVR ISP.\n'
          'github.com/sfambach/XT-AT-PC-RGB-LED - fambach.net',
     power=['+5V', 'GND'],
-    board=(99.0, 100, 141.0, 136.4),
+    board=(99.0, 99.0, 141.0, 137.4),
     parts=V2_PARTS, place=V2_PLACE,
     texts=[('+5V GND', gx(0.5), 100.9, 0.8), ('HDD', gx(3.5), 100.9, 0.8), ('TURBO', gx(6.5), 100.9, 0.8),
            ('SW IN', gx(9.5), 100.9, 0.8), ('SW OUT', gx(12.5), 100.9, 0.8),
