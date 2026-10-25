@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, Circle
 
 T = 1.6        # board thickness
-H_TOP = 8.5    # straight pin header above board (assumption)
+H_TOP = 11.0   # standing resistors/diodes above board (assumption)
 H_BOT = 3.0    # pins / leads below board (assumption)
 
 v = sys.argv[1]
@@ -81,9 +81,9 @@ note.text(0, 1, f"XT-AT-PC-RGB-LED {v}\nMaße in mm\n\n"
          "Platine 2-lagig, 1,6 mm\n"
          "M3-Regel: 2 Löcher auf der\nlangen Achse, mittig, 3,5 mm\nvon den kurzen Kanten\n\n"
          "Annahmen (nicht gemessen):\n"
-         f"- oben ca. {mm(H_TOP)} mm (gerade\n  Stiftleiste)\n"
+         f"- oben ca. {mm(H_TOP)} mm (stehende\n  Widerstände)\n"
          f"- unten ca. {mm(H_BOT)} mm (Beinchen\n  gekürzt)\n"
-         "- abgewinkelte Stiftleisten\n  ändern die Bauhöhe",
+         "- liegende Widerstände und\n  abgewinkelte Stiftleisten\n  ändern die Bauhöhe",
          fontsize=8, va="top", family="monospace", transform=note.transAxes)
 
 for ax in (top, front, side):
