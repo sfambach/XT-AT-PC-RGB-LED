@@ -1,27 +1,7 @@
 ** Drc report for /home/user/xt-at-pc-rgb-led/hardware/v1/xt-at-pc-rgb-led-v1.kicad_pcb **
-** Created on 2026-10-25 16:43:03 **
+** Created on 2026-10-25 16:46:53 **
 
 ** Found 11 DRC violations **
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(124.1300 mm, 123.7500 mm): PCB Text 'SW OUT' on F.Silkscreen
-    @(124.1300 mm, 123.3300 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(115.2400 mm, 123.3300 mm): Line on F.Silkscreen
-    @(116.5100 mm, 123.7500 mm): PCB Text 'SW IN' on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(116.5100 mm, 123.7500 mm): PCB Text 'SW IN' on F.Silkscreen
-    @(116.5100 mm, 123.3300 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(106.3500 mm, 123.7500 mm): PCB Text 'A R G B' on F.Silkscreen
-    @(103.8100 mm, 123.3300 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(124.1300 mm, 123.7500 mm): PCB Text 'SW OUT' on F.Silkscreen
-    @(122.8600 mm, 123.3300 mm): Line on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; Severity: warning
     @(103.8100 mm, 100.9000 mm): PCB Text 'PLED + -' on F.Silkscreen
@@ -38,12 +18,32 @@
     Rule: board setup constraints silk; Severity: warning
     @(119.0500 mm, 100.9000 mm): PCB Text 'TURBO + -' on F.Silkscreen
     @(119.0500 mm, 103.8700 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(127.9400 mm, 114.0400 mm): Reference 'Q1'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(116.5100 mm, 123.7500 mm): PCB Text 'SW IN' on F.Silkscreen
+    @(115.2400 mm, 123.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(116.5100 mm, 123.7500 mm): PCB Text 'SW IN' on F.Silkscreen
+    @(116.5100 mm, 123.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(106.3500 mm, 123.7500 mm): PCB Text 'A R G B' on F.Silkscreen
+    @(103.8100 mm, 123.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(124.1300 mm, 123.7500 mm): PCB Text 'SW OUT' on F.Silkscreen
+    @(122.8600 mm, 123.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(124.1300 mm, 123.7500 mm): PCB Text 'SW OUT' on F.Silkscreen
+    @(124.1300 mm, 123.3300 mm): Line on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; Severity: warning
     @(115.2400 mm, 114.0400 mm): Reference 'Q2'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(127.9400 mm, 114.0400 mm): Reference 'Q1'
 
 ** Found 0 unconnected pads **
 

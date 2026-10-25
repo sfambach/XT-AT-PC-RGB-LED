@@ -1,47 +1,19 @@
 ** Drc report for /home/user/xt-at-pc-rgb-led/hardware/v2/xt-at-pc-rgb-led-v2.kicad_pcb **
-** Created on 2026-10-25 16:43:42 **
+** Created on 2026-10-25 16:48:04 **
 
-** Found 17 DRC violations **
+** Found 10 DRC violations **
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; Severity: warning
-    @(105.0800 mm, 133.6000 mm): PCB Text '5V D GND' on F.Silkscreen
-    @(102.5400 mm, 133.3300 mm): Line on F.Silkscreen
+    @(134.2900 mm, 100.9000 mm): PCB Text 'SW OUT' on F.Silkscreen
+    @(134.2900 mm, 101.2100 mm): Line on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; Severity: warning
-    @(105.0800 mm, 133.6000 mm): PCB Text '5V D GND' on F.Silkscreen
-    @(103.8100 mm, 133.3300 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(103.1610 mm, 124.3200 mm): Line on F.Silkscreen
-    @(103.7900 mm, 124.8500 mm): Reference 'C2'
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(119.0500 mm, 103.8700 mm): Line on F.Silkscreen
-    @(119.0500 mm, 100.9000 mm): PCB Text 'TURBO' on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(119.0500 mm, 100.9000 mm): PCB Text 'TURBO' on F.Silkscreen
-    @(119.0500 mm, 101.2100 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(127.9400 mm, 133.6000 mm): PCB Text 'A  COM  K' on F.Silkscreen
-    @(126.6700 mm, 133.3300 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(127.9400 mm, 133.6000 mm): PCB Text 'A  COM  K' on F.Silkscreen
-    @(125.4000 mm, 133.3300 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(116.5100 mm, 133.6000 mm): PCB Text 'COM R G B' on F.Silkscreen
-    @(113.9700 mm, 133.3300 mm): Line on F.Silkscreen
+    @(126.6700 mm, 100.9000 mm): PCB Text 'SW IN' on F.Silkscreen
+    @(126.6700 mm, 101.2100 mm): Line on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; Severity: warning
     @(130.4800 mm, 117.0000 mm): PCB Text 'ISP' on F.Silkscreen
     @(130.4800 mm, 117.2700 mm): Reference 'J8'
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(131.1150 mm, 109.6100 mm): Reference 'R10'
-    @(132.4850 mm, 106.3400 mm): Line on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; Severity: warning
     @(111.4300 mm, 100.9000 mm): PCB Text 'HDD' on F.Silkscreen
@@ -52,6 +24,14 @@
     @(111.4300 mm, 103.8700 mm): Line on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; Severity: warning
+    @(119.0500 mm, 100.9000 mm): PCB Text 'TURBO' on F.Silkscreen
+    @(119.0500 mm, 103.8700 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(119.0500 mm, 100.9000 mm): PCB Text 'TURBO' on F.Silkscreen
+    @(119.0500 mm, 101.2100 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
     @(103.8100 mm, 100.9000 mm): PCB Text '+5V GND' on F.Silkscreen
     @(103.8100 mm, 101.2100 mm): Line on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
@@ -60,16 +40,8 @@
     @(106.4100 mm, 103.8700 mm): Line on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; Severity: warning
-    @(126.6700 mm, 100.9000 mm): PCB Text 'SW IN' on F.Silkscreen
-    @(126.6700 mm, 101.2100 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(134.2900 mm, 100.9000 mm): PCB Text 'SW OUT' on F.Silkscreen
-    @(134.2900 mm, 101.2100 mm): Line on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; Severity: warning
-    @(134.2900 mm, 109.6100 mm): Reference 'R11'
-    @(135.6600 mm, 106.3400 mm): Line on F.Silkscreen
+    @(103.7900 mm, 124.8500 mm): Reference 'C2'
+    @(103.1610 mm, 124.3200 mm): Line on F.Silkscreen
 
 ** Found 0 unconnected pads **
 

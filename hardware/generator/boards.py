@@ -119,13 +119,13 @@ V2 = dict(
          'JP1: COM to +5V for common anode, to GND for common cathode. J8 standard 6-pin AVR ISP.\n'
          'github.com/sfambach/XT-AT-PC-RGB-LED - fambach.net',
     power=['+5V', 'GND'],
-    board=(99.0, 99.0, 141.0, 137.4),
+    board=(99.0, 98.0, 141.0, 138.4),
     parts=V2_PARTS, place=V2_PLACE,
     texts=[('+5V GND', gx(0.5), 100.9, 0.8), ('HDD', gx(3.5), 100.9, 0.8), ('TURBO', gx(6.5), 100.9, 0.8),
            ('SW IN', gx(9.5), 100.9, 0.8), ('SW OUT', gx(12.5), 100.9, 0.8),
-           ('5V D GND', gx(1), 133.6, 0.8), ('COM R G B', gx(5.5), 133.6, 0.8),
-           ('A  COM  K', gx(10), 133.6, 0.8), ('ISP', gx(11), 117.0, 0.8)],
-    btexts=[('XT-AT-PC-RGB-LED v2 - fambach.net - CERN-OHL-S-2.0', 120.0, 135.4, 0.8)],
+           ('5V D GND', gx(1), 135.6, 0.8), ('COM R G B', gx(5.5), 135.6, 0.8),
+           ('A  COM  K', gx(10), 135.6, 0.8), ('ISP', gx(11), 117.0, 0.8)],
+    btexts=[('XT-AT-PC-RGB-LED v2 - fambach.net - CERN-OHL-S-2.0', 120.0, 137.4, 0.8)],
 )
 
 BOARDS = {'v1': V1, 'v2': V2}

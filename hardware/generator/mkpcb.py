@@ -81,7 +81,8 @@ for ref, (lib_id, value, fpid, _, conn) in PARTS.items():
         t.SetTextSize(pcbnew.VECTOR2I(MM(1.0), MM(1.0)))
         t.SetTextThickness(MM(0.15))
         t.SetPosition(pcbnew.VECTOR2I(MM((x1 + x2) / 2), MM((y1 + y2) / 2)))
-        t.SetTextAngleDegrees(90 if abs(x2 - x1) < 0.01 else 0)
+        # KiCad 7 stores footprint text relative to the footprint orientation.
+        t.SetTextAngleDegrees(((90 if abs(x2 - x1) < 0.01 else 0) - f.GetOrientationDegrees()) % 360)
 
 x0, y0, x1, y1 = BOARD
 # Mounting rule for all boards: two M3 holes on the long axis, centred, 3.5 mm from the short edges.

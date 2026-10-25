@@ -5,7 +5,7 @@ Two small through-hole boards, generated with KiCad 7 from Python scripts (`gene
 | Board | Size | Content |
 |---|---|---|
 | [v1](v1/) | 44 × 26.5 mm | discrete: 2× BC547, 5× 1N4148, 3 resistors |
-| [v2](v2/) | 42 × 38.4 mm | ATtiny84 in a DIP-14 socket, 6-pin AVR ISP, addressable and plain RGB LED output |
+| [v2](v2/) | 42 × 40.4 mm | ATtiny84 in a DIP-14 socket, 6-pin AVR ISP, addressable and plain RGB LED output |
 
 Each folder has the KiCad project, schematic PDF, Gerber ZIP, DRC report and top/bottom renders. 2D dimension drawings (top, front and side view) are in [drawings/](drawings/), generated from the PCB by `generator/drawing.py`.
 
@@ -23,7 +23,7 @@ Each folder has the KiCad project, schematic PDF, Gerber ZIP, DRC report and top
 | Board | Outline | Holes (from top left corner) |
 |---|---|---|
 | v1 | 44 × 26.5 × 1.6 mm | Ø3.2 at (3.5 / 13.25) and (40.5 / 13.25) |
-| v2 | 42 × 38.4 × 1.6 mm | Ø3.2 at (3.5 / 19.2) and (38.5 / 19.2) |
+| v2 | 42 × 40.4 × 1.6 mm | Ø3.2 at (3.5 / 20.2) and (38.5 / 20.2) |
 
 Resistors and diodes lie flat (7.62 mm pitch, side by side). Assumed, not measured: about 8.5 mm component height above the board (pin headers, DIP socket, TO-92) and about 3 mm leads below. Angled headers change the height.
 
