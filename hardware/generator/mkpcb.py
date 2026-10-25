@@ -74,6 +74,14 @@ for ref, (lib_id, value, fpid, _, conn) in PARTS.items():
     if kind[0] == 'pads':
         got = pos(pad(f, '2'))
         assert abs(got[0] - kind[2][0]) < 0.05 and abs(got[1] - kind[2][1]) < 0.05, (ref, got, kind)
+    if ref[0] in 'RD' and kind[0] == 'pads':
+        # Flat resistors/diodes: reference inside the body outline, along the part.
+        (x1, y1), (x2, y2) = kind[1], kind[2]
+        t = f.Reference()
+        t.SetTextSize(pcbnew.VECTOR2I(MM(1.0), MM(1.0)))
+        t.SetTextThickness(MM(0.15))
+        t.SetPosition(pcbnew.VECTOR2I(MM((x1 + x2) / 2), MM((y1 + y2) / 2)))
+        t.SetTextAngleDegrees(90 if abs(x2 - x1) < 0.01 else 0)
 
 x0, y0, x1, y1 = BOARD
 # Mounting rule for all boards: two M3 holes on the long axis, centred, 3.5 mm from the short edges.

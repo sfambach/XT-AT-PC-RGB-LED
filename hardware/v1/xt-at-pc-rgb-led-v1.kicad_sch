@@ -1,7 +1,7 @@
 (kicad_sch
   (version 20230121)
   (generator eeschema)
-  (uuid "eff3d9c6-147c-4b35-bcc9-53ecba0d29be")
+  (uuid "ee032aa0-bbc7-4bd5-8917-8a00570c25e7")
   (paper "A4")
   (title_block
     (title "XT-AT-PC-RGB-LED v1 - discrete")
@@ -709,7 +709,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "f45bc355-cf60-4c72-95bc-a5b906efb1aa")
+    (uuid "37ce2576-1973-4a70-9176-e380d3ea2d9e")
     (property "Reference" "J1"
       (at 40 31 0)
       (effects
@@ -733,12 +733,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "f95d8ab5-b643-4edd-b427-390f64b2c232"))
+      (uuid "aaa2e8a1-e89e-41fb-b26a-3b3ed307e428"))
     (pin "2"
-      (uuid "c91c2c12-51b4-4e3f-a3b2-5b36b64b7ee1"))
+      (uuid "da49af0d-8044-45e5-9c7b-e604746e9ef5"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "J1")
           (unit 1)))))
   (label "PLED_P"
@@ -747,7 +747,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "16dc51e7-cf4a-4dce-b671-b55907622fd5"))
+    (uuid "bedacc1a-3bff-4d3f-9c7f-f5c6ea3f5faf"))
   (symbol
     (lib_id "power:GND")
     (at 34.92 42.54 90)
@@ -755,7 +755,7 @@
     (in_bom no)
     (on_board yes)
     (dnp no)
-    (uuid "4627db30-b35c-458a-84b2-6432845bada0")
+    (uuid "b4c053bb-059a-4db3-ae5c-7c030971da2f")
     (property "Reference" "#PWR01"
       (at 34.92 42.54 0)
       (effects
@@ -780,10 +780,10 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "b9b65a54-cd5d-42ee-8b3b-bdf324dc2333"))
+      (uuid "9568c609-4221-4a89-9a92-52cf9ed2ae7c"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "#PWR01")
           (unit 1)))))
   (symbol
@@ -793,7 +793,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "9bbe6e71-8d49-4230-b229-c542d6ce8c58")
+    (uuid "5cc0a9d7-109d-4e40-9c27-8afaf7f5933f")
     (property "Reference" "J2"
       (at 40 61 0)
       (effects
@@ -817,24 +817,24 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "e2b9e39a-7857-4499-8b81-17c9a64c5797"))
+      (uuid "fd159886-e406-4ec2-b288-9b7c120b4ecc"))
     (pin "2"
-      (uuid "3b99d3c0-9ad9-4c1a-9f4b-898cd177623a"))
+      (uuid "c31056a6-3607-4187-8146-8580c8bcee26"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "J2")
           (unit 1)))))
   (no_connect
     (at 34.92 70)
-    (uuid "8c94250e-017b-4cc1-8d5b-c4e3f4921442"))
+    (uuid "124d137f-d73f-4de2-9068-401822e99e91"))
   (label "HDD"
     (at 34.92 72.54 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "3f472b3b-9b8a-4f3f-8522-21a30c76eeb4"))
+    (uuid "9d057006-a0af-4233-a482-1598b7c1c7be"))
   (symbol
     (lib_id "Connector_Generic:Conn_01x02")
     (at 40 100 0)
@@ -842,7 +842,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "2b6e5d77-9025-4ba0-b17c-4101dd796f70")
+    (uuid "423df2f5-6168-4e98-a15d-3d4295e7f9b0")
     (property "Reference" "J3"
       (at 40 91 0)
       (effects
@@ -866,24 +866,24 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "80454451-b2f5-4b57-9d60-16f986c99d5c"))
+      (uuid "4e9d54c0-166d-4421-94ef-d39ad6d6d836"))
     (pin "2"
-      (uuid "b3b629cd-2efc-4c5d-9b0c-e21a87269d28"))
+      (uuid "a6fa5341-0cad-41a1-b867-d3ab0b1cf945"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "J3")
           (unit 1)))))
   (no_connect
     (at 34.92 100)
-    (uuid "d83cbd5b-4451-4baf-b71e-6583ed7eace5"))
+    (uuid "aa748060-e909-4454-a9c7-d33e2ee73d0d"))
   (label "TURBO"
     (at 34.92 102.54 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "064abb3e-89c4-49f0-be36-2df9aa8edf54"))
+    (uuid "25d57f2d-74f9-4589-88ae-55768df57f78"))
   (symbol
     (lib_id "Connector_Generic:Conn_01x04")
     (at 250 70 0)
@@ -891,7 +891,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "41b8173b-a917-44c2-a741-fe35ac069120")
+    (uuid "16acddd6-2d2b-4a6b-b91a-b35c13bbc8cb")
     (property "Reference" "J4"
       (at 250 61 0)
       (effects
@@ -915,16 +915,16 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "3fad5f21-aee5-4b70-a676-7d3ec8b1a7b7"))
+      (uuid "d5c6d525-6694-4bb6-8351-b722cf628e87"))
     (pin "2"
-      (uuid "b38a8d3e-9f91-4cb4-adb9-30ecd09c1ebc"))
+      (uuid "ec226b76-f5a9-4c10-926b-80e61b95311e"))
     (pin "3"
-      (uuid "cdd0dae5-ff3c-4e9c-bd3f-12c0b49a3977"))
+      (uuid "78b3a78a-46e6-4eb3-81b5-b03db8702bdc"))
     (pin "4"
-      (uuid "844f6001-d163-4832-9afa-f5fb2a0b0686"))
+      (uuid "ad4d804b-7ee6-4f47-98b5-6e46f0904a24"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "J4")
           (unit 1)))))
   (label "ANODE"
@@ -933,28 +933,28 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "5edd6095-0194-486c-b270-bb944f735e09"))
+    (uuid "f81d5bc6-4597-4187-8026-5e162f9d730f"))
   (label "RED_K"
     (at 244.92 70 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a6f6578f-eb04-475b-a212-54b9d1dbfb5c"))
+    (uuid "9c5f1bea-f0c1-4cf9-9aa7-3c97f9d7dd5c"))
   (label "GREEN_K"
     (at 244.92 72.54 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "041cfb56-d02a-4d73-b95b-14820ebef776"))
+    (uuid "95679c6a-346c-43b7-9e75-dbe8090f27f2"))
   (label "HDD"
     (at 244.92 75.08 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "efb5847c-d245-45ab-8f85-4211eb96e1ca"))
+    (uuid "8727d031-9958-455b-9a83-de7870d7c892"))
   (symbol
     (lib_id "Connector_Generic:Conn_01x02")
     (at 250 130 0)
@@ -962,7 +962,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "e053a386-ee71-4765-a1ab-3d16e35f5640")
+    (uuid "c6a17f6d-77ee-4e37-95e5-0192541f262c")
     (property "Reference" "J5"
       (at 250 121 0)
       (effects
@@ -986,12 +986,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "c46a1c23-f6f9-4d49-a61d-c04aba32337e"))
+      (uuid "eabab182-a4a5-48f7-b34a-a7cb3c6a175c"))
     (pin "2"
-      (uuid "3f66614e-b4ff-4692-89ad-8580b7207e39"))
+      (uuid "847933b3-7039-48f5-8a74-f9770dfc5799"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "J5")
           (unit 1)))))
   (label "SW1"
@@ -1000,14 +1000,14 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "de2687c4-6226-45ba-af30-4e1350902a4f"))
+    (uuid "a913c53a-04ea-4aca-9dd5-d6e90ebf844e"))
   (label "SW2"
     (at 244.92 132.54 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "6f6a158e-344b-4839-9906-db40bb01056a"))
+    (uuid "7070ea86-0ad9-4e59-92de-bf5ec560f677"))
   (symbol
     (lib_id "Connector_Generic:Conn_01x02")
     (at 250 160 0)
@@ -1015,7 +1015,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "4a988106-a922-40f7-bdba-6385dcf54bff")
+    (uuid "18817f73-0734-41dd-9bc0-1ad3cc368f4d")
     (property "Reference" "J6"
       (at 250 151 0)
       (effects
@@ -1039,12 +1039,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "9fda8cfb-b657-4021-b163-ac144f7d5760"))
+      (uuid "26104c6a-5f14-411c-8ad6-96fd54e30b53"))
     (pin "2"
-      (uuid "caccfea0-e1e0-4f4f-9ded-8a35e920fdd0"))
+      (uuid "03ea52b8-8206-4728-a7a9-274455ae16f8"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "J6")
           (unit 1)))))
   (label "SW1"
@@ -1053,14 +1053,14 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "943031fa-7d92-4607-8736-e1541bad3795"))
+    (uuid "eeb44931-c069-4457-ae1c-26263dcf22cd"))
   (label "SW2"
     (at 244.92 162.54 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "b24ef830-27c1-4e3a-a0d0-9024ac44626f"))
+    (uuid "2419f08a-e54d-404a-9732-bd1346d12d01"))
   (symbol
     (lib_id "Device:R")
     (at 80 40 0)
@@ -1068,7 +1068,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "17526416-88ad-4719-a9c7-aa7d4d4bcba9")
+    (uuid "78224230-f329-4eaa-8262-a1855ddb4559")
     (property "Reference" "R0"
       (at 82.5 38.7 0)
       (effects
@@ -1094,12 +1094,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "41a34430-3747-4eb4-b014-7933467ae42c"))
+      (uuid "b4f8338b-6396-448f-baa9-a719251c3e4d"))
     (pin "2"
-      (uuid "c3a14e3c-13fa-4930-a47b-d43c9017242e"))
+      (uuid "cb21776f-4240-400a-b8bf-836be41474e2"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "R0")
           (unit 1)))))
   (label "PLED_P"
@@ -1108,14 +1108,14 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "979cbf76-6ca7-4fb5-b43f-8590de30d80f"))
+    (uuid "a02d9223-422f-455d-b41e-52f0403f7c3e"))
   (label "ANODE"
     (at 80 43.81 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "8a95a395-366c-468a-9481-21c280ba5ed4"))
+    (uuid "ec4a5872-9112-493b-9b1a-34a9e3364a5f"))
   (symbol
     (lib_id "Device:R")
     (at 110 40 0)
@@ -1123,7 +1123,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "eb771c0e-3df0-471b-a8a9-b6bc58b1cd2f")
+    (uuid "10ce75b4-b0fb-4c7c-ae30-82c74ea89916")
     (property "Reference" "R1"
       (at 112.5 38.7 0)
       (effects
@@ -1149,12 +1149,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "a1f015d6-b5ff-4047-be8c-93b0761cc0e4"))
+      (uuid "8218d36d-4ead-41a2-a45e-c0d92ecdf482"))
     (pin "2"
-      (uuid "1423fa0e-a461-4dc8-afcc-8496bb2f990e"))
+      (uuid "baad9c3c-f75f-4612-a7ba-d65cf7202563"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "R1")
           (unit 1)))))
   (label "ANODE"
@@ -1163,14 +1163,14 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "fc498ede-e858-47d0-8f95-b4d622a55def"))
+    (uuid "76e19c94-8c8c-48be-8567-ea200f8f30d4"))
   (label "X1"
     (at 110 43.81 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "41d89bd4-a65f-4378-8aa3-13a839a9f3cf"))
+    (uuid "ef04f278-a05f-4b09-a05a-dd04705e0570"))
   (symbol
     (lib_id "Device:R")
     (at 170 40 0)
@@ -1178,7 +1178,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "e6adec0f-9a2b-40c3-b9aa-1faf624636ce")
+    (uuid "82de5476-d770-4e1d-ba59-8a8ac963b7ea")
     (property "Reference" "R2"
       (at 172.5 38.7 0)
       (effects
@@ -1204,12 +1204,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "2f56c642-5c1d-4b36-8e35-2fab02b4fc49"))
+      (uuid "99817c6f-b2bb-4677-88f4-b103f4cfb0b0"))
     (pin "2"
-      (uuid "222f45ea-e91b-483f-b4ce-2174ac5779e4"))
+      (uuid "2efbd4e0-d269-47d4-ad07-3bdfc8c7948c"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "R2")
           (unit 1)))))
   (label "ANODE"
@@ -1218,14 +1218,14 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "5e3211b0-dbbb-4cfd-9c3d-16482b127212"))
+    (uuid "289ff57a-b437-4848-bca7-4fe884962dfd"))
   (label "X2"
     (at 170 43.81 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "2b98a174-d4a3-49dd-9cfa-35646877751f"))
+    (uuid "fd7e9c03-6917-47e9-a272-962e1f05f6ff"))
   (symbol
     (lib_id "Transistor_BJT:BC547")
     (at 130 90 0)
@@ -1233,7 +1233,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "8d1d12f4-e6cd-49e4-8769-fc574e3c5df8")
+    (uuid "c0a5a788-9fad-4440-924b-9d2480be8216")
     (property "Reference" "Q1"
       (at 130 81 0)
       (effects
@@ -1257,14 +1257,14 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "14fc55ad-940a-4b4e-bb88-ccab7095c5ea"))
+      (uuid "27405341-eaa9-4e69-8bb7-44edbcf9bdb4"))
     (pin "2"
-      (uuid "f4bbe0d3-8e3c-42f5-9d52-244d02afc807"))
+      (uuid "a461ae5c-2a2b-45b3-a9f0-ab8ab6e80d43"))
     (pin "3"
-      (uuid "f68c93e8-e613-4b01-9745-ecd3a2061299"))
+      (uuid "27cd8dad-968d-4fa3-a3ac-8aae8b40f0c2"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "Q1")
           (unit 1)))))
   (label "GREEN_K"
@@ -1273,21 +1273,21 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "8e682491-dbd7-431a-8af4-991b56cfa80d"))
+    (uuid "5584f856-167d-4085-bf17-f26e72437df2"))
   (label "X1"
     (at 124.92 90 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "5d160cce-3480-4755-892a-ca97d8bb6cc5"))
+    (uuid "a0e8b0b8-973c-4316-bb1c-566ac43e14d9"))
   (label "E1"
     (at 132.54 95.08 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "19780672-1e4c-422c-a79b-c271d27ecf99"))
+    (uuid "4caab941-b860-4539-a243-0b5d5e81459a"))
   (symbol
     (lib_id "Transistor_BJT:BC547")
     (at 190 90 0)
@@ -1295,7 +1295,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "feb4e887-4251-4e8a-a499-43adf2124105")
+    (uuid "921feaa9-9f31-456c-bf5e-0e7be8b82170")
     (property "Reference" "Q2"
       (at 190 81 0)
       (effects
@@ -1319,14 +1319,14 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "9f2cb990-77e4-4b39-9c01-d03aa919d4ed"))
+      (uuid "3246446d-d8d8-4dae-bd2c-d16c27c8880e"))
     (pin "2"
-      (uuid "e1c59ffc-b104-4fe5-a818-142d9f6b1eb7"))
+      (uuid "05e063ac-70c8-45b2-b780-127dc92ef0ff"))
     (pin "3"
-      (uuid "2ad84b08-8c6a-4c60-85e3-29f47a0e19d6"))
+      (uuid "1c55c1ef-420f-4c19-8ea5-f3e12cb9a19c"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "Q2")
           (unit 1)))))
   (label "RED_K"
@@ -1335,21 +1335,21 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "6016f8a2-7168-4140-a444-9fd70932ae57"))
+    (uuid "6422e800-d0c4-42ce-b253-9c382e217676"))
   (label "X2"
     (at 184.92 90 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "810cbed9-3495-4a06-9002-8edf6edf97cc"))
+    (uuid "dcc4a4d2-859c-4780-af21-09105a510656"))
   (label "E2"
     (at 192.54 95.08 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "ac8384b1-713b-44d3-806a-2358ff2451a9"))
+    (uuid "c60ab8ef-145a-4259-b2f9-d1d600b42794"))
   (symbol
     (lib_id "Diode:1N4148")
     (at 100 130 0)
@@ -1357,7 +1357,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "ce9ff686-a8d4-49a8-ad3f-d3d35cdb5f5b")
+    (uuid "1a575276-bee0-4a1b-bbfb-83e46f0ddfce")
     (property "Reference" "D1"
       (at 100 121 0)
       (effects
@@ -1381,12 +1381,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "b6598c68-ae16-46f4-9c40-6ba17efbf9e8"))
+      (uuid "75a3be4c-d983-4b5b-a8a7-638e994c02d2"))
     (pin "2"
-      (uuid "3facd356-28a5-41b7-939f-ab882367da20"))
+      (uuid "3e249f4f-35b3-4fdd-9560-a21a650a64ea"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "D1")
           (unit 1)))))
   (label "HDD"
@@ -1395,14 +1395,14 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "0fa0242d-49cc-438a-ab0d-e4b3f1f9fbc1"))
+    (uuid "1aef9950-7ba2-4300-a685-d84c64c3b026"))
   (label "X1"
     (at 103.81 130 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "892510c3-0df9-41e8-b2f8-e9d75b39f523"))
+    (uuid "1157f171-e967-4d8d-8edc-c49f87b0f374"))
   (symbol
     (lib_id "Diode:1N4148")
     (at 115 130 0)
@@ -1410,7 +1410,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "fb5fa902-60a4-4912-8a54-447b555a5c90")
+    (uuid "c553b0d2-b225-4586-aa22-179348856409")
     (property "Reference" "D2"
       (at 115 121 0)
       (effects
@@ -1434,12 +1434,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "88496895-50d1-46b0-8631-9f6ee1483bd8"))
+      (uuid "d296505e-9dce-4c59-9f4b-08d9457c307a"))
     (pin "2"
-      (uuid "770badea-f759-4859-ae8e-fb18a8af712e"))
+      (uuid "a953d47d-797a-45c4-9f52-91b5bcc9b3a1"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "D2")
           (unit 1)))))
   (label "TURBO"
@@ -1448,14 +1448,14 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "4293e117-ec85-4c94-937f-266fb8f284b5"))
+    (uuid "aa3aebb4-f74a-4023-a743-491149652451"))
   (label "X1"
     (at 118.81 130 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "d2470e5e-5401-4017-9536-cf8d1b6d073a"))
+    (uuid "69814ff9-9858-4bcd-98c7-73ac80f9e892"))
   (symbol
     (lib_id "Diode:1N4148")
     (at 160 130 0)
@@ -1463,7 +1463,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "623831ad-bb7d-495b-98f6-11acff8428c6")
+    (uuid "7bcf884e-1cb4-4b67-8a7b-93ebb1b9d63f")
     (property "Reference" "D3"
       (at 160 121 0)
       (effects
@@ -1487,12 +1487,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "92185bbc-a758-47fc-b104-8a6055f2406c"))
+      (uuid "f4674d9f-947d-412e-82e0-735d0f3e092d"))
     (pin "2"
-      (uuid "9a28c241-5955-4dcc-b264-1834aae707b0"))
+      (uuid "3069e8e3-bd27-4319-aa81-31db6137f00b"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "D3")
           (unit 1)))))
   (label "HDD"
@@ -1501,14 +1501,14 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "ce10080f-2048-4472-8f90-e9fc111b56cf"))
+    (uuid "0071009e-c410-474d-93b8-9b79e4cc0a08"))
   (label "X2"
     (at 163.81 130 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "f532a3c3-bd2d-49e9-afbb-1ef50a4f33e5"))
+    (uuid "a4579476-abbb-4843-8f5a-1659e368a285"))
   (symbol
     (lib_id "Diode:1N4148")
     (at 130 130 0)
@@ -1516,7 +1516,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "d43da950-473f-490f-a85f-0db8dbf0f255")
+    (uuid "a66a08bc-3e2f-468c-852c-47c104badb45")
     (property "Reference" "D4"
       (at 130 121 0)
       (effects
@@ -1540,12 +1540,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "0b7c2d11-040c-4569-b12c-bd8d9160320d"))
+      (uuid "29b56ee9-c157-489d-be29-0bf342d6ef10"))
     (pin "2"
-      (uuid "14c63bbf-edd9-4df7-af46-f2650885d94d"))
+      (uuid "37896d92-0fb5-4665-900e-860a28e72246"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "D4")
           (unit 1)))))
   (symbol
@@ -1555,7 +1555,7 @@
     (in_bom no)
     (on_board yes)
     (dnp no)
-    (uuid "85bce2ab-7333-430d-b23d-49432002708e")
+    (uuid "15b05126-da95-42f3-be54-3d73cb5cd519")
     (property "Reference" "#PWR02"
       (at 126.19 130 0)
       (effects
@@ -1580,10 +1580,10 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "72974123-2f11-4bbd-8311-4b361c025ace"))
+      (uuid "5b78441e-6742-4053-9c35-4be77d468f40"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "#PWR02")
           (unit 1)))))
   (label "E1"
@@ -1592,7 +1592,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "f7d1549d-9d37-4593-bde3-c5a02bd723dc"))
+    (uuid "53d386bd-b478-405b-b345-7e686c32ebbd"))
   (symbol
     (lib_id "Diode:1N4148")
     (at 190 130 0)
@@ -1600,7 +1600,7 @@
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "64ff7778-aa5a-4990-ac5a-daefa24b1c20")
+    (uuid "21c50031-65b0-4e49-9de6-ce5a988ddacf")
     (property "Reference" "D5"
       (at 190 121 0)
       (effects
@@ -1624,12 +1624,12 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "c6d4686a-454f-4782-9ca9-1ff20786ea8a"))
+      (uuid "a82105dc-e06f-418c-8cd0-afdc2b62a985"))
     (pin "2"
-      (uuid "5b0b39fa-6158-4229-bb55-203a1aaa524d"))
+      (uuid "4086d91f-d019-414f-982e-a9b3781f14d9"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "D5")
           (unit 1)))))
   (label "TURBO"
@@ -1638,14 +1638,14 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "626ba3c0-f095-4da0-a5e0-726e94543bcc"))
+    (uuid "b9702de4-a045-4ccd-b91a-b6837b5ff762"))
   (label "E2"
     (at 193.81 130 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "13f78e56-0f95-47f8-b69c-4fd9fd2ccac3"))
+    (uuid "2f13a9b6-e166-4289-9e37-d675ca0ed661"))
   (symbol
     (lib_id "power:PWR_FLAG")
     (at 30 15 0)
@@ -1653,7 +1653,7 @@
     (in_bom no)
     (on_board yes)
     (dnp no)
-    (uuid "e1f7c29e-8257-4543-a903-9ded1184e0de")
+    (uuid "43afc0fe-1418-497f-8253-a80141003363")
     (property "Reference" "#FLG01"
       (at 30 15 0)
       (effects
@@ -1678,10 +1678,10 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "9ffb5916-12c1-4e3d-a1ac-4a794a7f86c5"))
+      (uuid "87bbdc99-f987-4cc4-8aad-5687def7e24d"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "#FLG01")
           (unit 1)))))
   (symbol
@@ -1691,7 +1691,7 @@
     (in_bom no)
     (on_board yes)
     (dnp no)
-    (uuid "0931bb13-e8b6-402e-989e-c7fc1e320859")
+    (uuid "88e4f7d4-1b0d-4532-b63a-10ed9b1b72ab")
     (property "Reference" "#PWR04"
       (at 30 15 0)
       (effects
@@ -1716,10 +1716,10 @@
           (size 1.27 1.27))
         hide))
     (pin "1"
-      (uuid "664aa61a-e297-451f-b920-6fe7a76b83d4"))
+      (uuid "ce8ccef5-a08f-4827-bb3c-24ec8f7b9fb5"))
     (instances
       (project "xt-at-pc-rgb-led-v1"
-        (path "/eff3d9c6-147c-4b35-bcc9-53ecba0d29be"
+        (path "/ee032aa0-bbc7-4bd5-8917-8a00570c25e7"
           (reference "#PWR04")
           (unit 1)))))
   (text "Power (green), turbo (red), HDD (blue, priority) on one common anode RGB LED.\nR0 only if PLED+ has no series resistor on the mainboard, otherwise bridge.\ngithub.com/sfambach/XT-AT-PC-RGB-LED - fambach.net"
@@ -1728,7 +1728,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "a3cb20c7-cd76-44d2-aee3-2a1d6ce1be11"))
+    (uuid "57f3e375-35b4-44ae-a664-7cda00b2ced8"))
   (sheet_instances
     (path "/"
       (page "1"))))
