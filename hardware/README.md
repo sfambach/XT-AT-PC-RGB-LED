@@ -4,8 +4,8 @@ Two small through-hole boards, generated with KiCad 7 from Python scripts (`gene
 
 | Board | Size | Content |
 |---|---|---|
-| [v1](v1/) | 48 × 22.5 mm | discrete: 2× BC547, 5× 1N4148, 3 resistors |
-| [v2](v2/) | 42.5 × 33 mm | ATtiny84 in a DIP-14 socket, 6-pin AVR ISP, addressable and plain RGB LED output |
+| [v1](v1/) | 44 × 25.5 mm | discrete: 2× BC547, 5× 1N4148, 3 resistors |
+| [v2](v2/) | 42 × 36.4 mm | ATtiny84 in a DIP-14 socket, 6-pin AVR ISP, addressable and plain RGB LED output |
 
 Each folder has the KiCad project, schematic PDF, Gerber ZIP, DRC report and top/bottom renders. 2D dimension drawings (top, front and side view) are in [drawings/](drawings/), generated from the PCB by `generator/drawing.py`.
 
@@ -22,12 +22,12 @@ Each folder has the KiCad project, schematic PDF, Gerber ZIP, DRC report and top
 
 | Board | Outline | Holes (from top left corner) |
 |---|---|---|
-| v1 | 48 × 22.5 × 1.6 mm | Ø3.2 at (3.5 / 11.25) and (44.5 / 11.25) |
-| v2 | 42.5 × 33 × 1.6 mm | Ø3.2 at (3.5 / 16.5) and (39 / 16.5) |
+| v1 | 44 × 25.5 × 1.6 mm | Ø3.2 at (3.5 / 12.75) and (40.5 / 12.75) |
+| v2 | 42 × 36.4 × 1.6 mm | Ø3.2 at (3.5 / 18.2) and (38.5 / 18.2) |
 
-Resistors and diodes stand upright (2.54 mm pitch). Assumed, not measured: about 11 mm component height above the board and about 3 mm leads below. Lying resistors or angled headers change the height.
+Resistors and diodes lie flat (7.62 mm pitch, side by side). Assumed, not measured: about 8.5 mm component height above the board (pin headers, DIP socket, TO-92) and about 3 mm leads below. Angled headers change the height.
 
-On v2 the mounting holes sit between C1/C2 and next to R10/R11 instead of outside the parts, which keeps the board narrow.
+The mounting holes sit in gaps between the parts instead of outside them, which keeps the boards narrow.
 
 ![v1](drawings/v1-dimensions.png)
 ![v2](drawings/v2-dimensions.png)

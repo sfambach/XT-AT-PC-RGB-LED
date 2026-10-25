@@ -1,8 +1,8 @@
 # Netlists and placement of the XT-AT-PC-RGB-LED boards (v1 discrete, v2 ATtiny84).
 # Used by mksch.py / mkpcb.py / finish.py, see build.sh.
 NC = None
-R = 'Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical'
-D = 'Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp'
+R = 'Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal'
+D = 'Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal'
 C = 'Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm'
 TO92 = 'Package_TO_SOT_THT:TO-92_Inline_Wide'
 H = 'Connector_PinHeader_2.54mm:PinHeader_1x%02d_P2.54mm_Vertical'
@@ -18,6 +18,11 @@ def two(ref, value, x0, y, i, kind='R', step=1):
     """2-pin part with pad 1 at column i and pad 2 at column i + step."""
     fp = {'R': R, 'D': D, 'C': C}[kind]
     return fp, ('pads', (gx(i), y), (round(gx(i) + P * step, 3), y))
+
+
+def flat(i, y):
+    """Resistor or diode lying flat, pad 1 at column i / row y, pad 2 7.62 mm below."""
+    return ('pads', (gx(i), y), (gx(i), round(y + 7.62, 3)))
 
 
 def header(n, i, y):
@@ -43,14 +48,13 @@ V1_PARTS = {
     'D4': ('Diode:1N4148', '1N4148', D, (130, 130), {'1': 'GND', '2': 'E1'}),
     'D5': ('Diode:1N4148', '1N4148', D, (190, 130), {'1': 'TURBO', '2': 'E2'}),
 }
-Y1, Y2, YB = 107.4, 112.6, 118.0
+YF, YQ, YB = 105.8, 117.6, 122.0
 V1_PLACE = {
     'J1': header(2, 0, 102.54), 'J2': header(2, 3, 102.54), 'J3': header(2, 6, 102.54),
     'J4': header(4, 0, YB), 'J5': header(2, 5, YB), 'J6': header(2, 8, YB),
-    'R0': two('R0', 0, 0, Y1, 0)[1], 'R1': two('R1', 0, 0, Y1, 2.25)[1], 'R2': two('R2', 0, 0, Y1, 4.5)[1],
-    'Q2': ('pads', (gx(6.75), Y1), (gx(7.75), Y1)), 'Q1': ('pads', (gx(9.75), Y1), (gx(10.75), Y1)),
-    'D1': two('D1', 0, 0, Y2, 0, 'D')[1], 'D2': two('D2', 0, 0, Y2, 2.25, 'D')[1], 'D3': two('D3', 0, 0, Y2, 4.5, 'D')[1],
-    'D4': two('D4', 0, 0, Y2, 6.75, 'D')[1], 'D5': two('D5', 0, 0, Y2, 9, 'D')[1],
+    'R0': flat(2, YF), 'R1': flat(3.5, YF), 'R2': flat(5, YF),
+    'D1': flat(6.5, YF), 'D2': flat(8, YF), 'D3': flat(9.5, YF), 'D4': flat(11, YF), 'D5': flat(12.5, YF),
+    'Q2': ('pads', (gx(4), YQ), (gx(5), YQ)), 'Q1': ('pads', (gx(9), YQ), (gx(10), YQ)),
 }
 V1 = dict(
     name='xt-at-pc-rgb-led-v1',
@@ -59,11 +63,11 @@ V1 = dict(
          'R0 only if PLED+ has no series resistor on the mainboard, otherwise bridge.\n'
          'github.com/sfambach/XT-AT-PC-RGB-LED - fambach.net',
     power=['GND'],
-    board=(93, 100, 141.0, 122.5),
+    board=(98.8, 100, 142.8, 125.5),
     parts=V1_PARTS, place=V1_PLACE,
     texts=[('PLED + -', gx(0.5), 100.9, 0.8), ('HDD + -', gx(3.5), 100.9, 0.8), ('TURBO + -', gx(6.5), 100.9, 0.8),
-           ('A R G B', gx(1.5), 119.75, 0.8), ('SW IN', gx(5.5), 119.75, 0.8), ('SW OUT', gx(8.5), 119.75, 0.8)],
-    btexts=[('XT-AT-PC-RGB-LED v1 - fambach.net - CERN-OHL-S-2.0', 117, 121.2, 0.8)],
+           ('A R G B', gx(1.5), 123.75, 0.8), ('SW IN', gx(5.5), 123.75, 0.8), ('SW OUT', gx(8.5), 123.75, 0.8)],
+    btexts=[('XT-AT-PC-RGB-LED v1 - fambach.net - CERN-OHL-S-2.0', 120.8, 124.6, 0.8)],
 )
 
 # ---------------------------------------------------------------- v2
@@ -95,19 +99,17 @@ V2_PARTS = {
     'C1': ('Device:C', '100n', C, (120, 160), {'1': '+5V', '2': 'GND'}),
     'C2': ('Device:C', '100n', C, (140, 160), {'1': '+5V', '2': 'GND'}),
 }
-YT, YR, YDB, YDT = 102.54, 106.6, 118.6, 110.98
+YT, YR, YDB, YBOT = 102.54, 105.8, 127.62, 132.0
 V2_PLACE = {
     'J1': header(2, 0, YT), 'J2': header(2, 3, YT), 'J3': header(2, 6, YT), 'J4': header(2, 9, YT), 'J5': header(2, 12, YT),
-    'R1': two('', 0, 0, YR, 0)[1], 'R2': two('', 0, 0, YR, 2.25)[1], 'R3': two('', 0, 0, YR, 4.5)[1],
-    'R4': two('', 0, 0, YR, 6.75)[1], 'R5': two('', 0, 0, YR, 9)[1], 'R6': two('', 0, 0, YR, 11.25)[1],
-    'R7': two('', 0, 0, YR, 13.5)[1],
+    'R1': flat(0, YR), 'R2': flat(1.25, YR), 'R3': flat(2.5, YR), 'R4': flat(3.75, YR), 'R5': flat(5, YR),
+    'R6': flat(6.25, YR), 'R7': flat(7.5, YR), 'R8': flat(8.75, YR), 'R9': flat(10, YR), 'R10': flat(11.25, YR),
+    'R11': flat(12.5, YR),
     'U1': ('pads', (gx(3), YDB), (gx(4), YDB)),
-    'C1': ('pads', (gx(0), 111.0), (round(gx(0) + 2.5, 3), 111.0)),
-    'R8': two('', 0, 0, 110.6, 11)[1], 'R9': two('', 0, 0, 110.6, 13.25)[1],
-    'R10': two('', 0, 0, 116.6, 11)[1], 'R11': two('', 0, 0, 121.8, 10)[1],
-    'C2': ('pads', (gx(0), 122.0), (round(gx(0) + 2.5, 3), 122.0)),
-    'J6': header(3, 0, 129.0), 'J7': header(4, 4, 129.0), 'JP1': header(3, 9, 126.0),
-    'J8': ('pads', (gx(12.5), 123.92), (gx(13.5), 123.92)),
+    'C1': ('pads', (gx(0), 123.4), (round(gx(0) + 2.5, 3), 123.4)),
+    'C2': ('pads', (gx(0), 126.9), (round(gx(0) + 2.5, 3), 126.9)),
+    'J8': ('pads', (gx(10.5), 119.6), (gx(11.5), 119.6)),
+    'J6': header(3, 0, YBOT), 'J7': header(4, 4, YBOT), 'JP1': header(3, 9, YBOT),
 }
 V2 = dict(
     name='xt-at-pc-rgb-led-v2',
@@ -117,13 +119,13 @@ V2 = dict(
          'JP1: COM to +5V for common anode, to GND for common cathode. J8 standard 6-pin AVR ISP.\n'
          'github.com/sfambach/XT-AT-PC-RGB-LED - fambach.net',
     power=['+5V', 'GND'],
-    board=(99.0, 100, 141.5, 133.0),
+    board=(99.0, 100, 141.0, 136.4),
     parts=V2_PARTS, place=V2_PLACE,
     texts=[('+5V GND', gx(0.5), 100.9, 0.8), ('HDD', gx(3.5), 100.9, 0.8), ('TURBO', gx(6.5), 100.9, 0.8),
            ('SW IN', gx(9.5), 100.9, 0.8), ('SW OUT', gx(12.5), 100.9, 0.8),
-           ('5V D GND', gx(1), 130.6, 0.8), ('COM R G B', gx(5.5), 130.6, 0.8),
-           ('A  COM  K', gx(10), 127.6, 0.8), ('ISP', gx(13), 121.9, 0.8)],
-    btexts=[('XT-AT-PC-RGB-LED v2 - fambach.net - CERN-OHL-S-2.0', 120.25, 131.9, 0.8)],
+           ('5V D GND', gx(1), 133.6, 0.8), ('COM R G B', gx(5.5), 133.6, 0.8),
+           ('A  COM  K', gx(10), 133.6, 0.8), ('ISP', gx(11), 117.0, 0.8)],
+    btexts=[('XT-AT-PC-RGB-LED v2 - fambach.net - CERN-OHL-S-2.0', 120.0, 135.4, 0.8)],
 )
 
 BOARDS = {'v1': V1, 'v2': V2}
