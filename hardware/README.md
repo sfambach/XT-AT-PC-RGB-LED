@@ -7,7 +7,7 @@ Two small through-hole boards, generated with KiCad 7 from Python scripts (`gene
 | [v1](v1/) | 48 × 22.5 mm | discrete: 2× BC547, 5× 1N4148, 3 resistors |
 | [v2](v2/) | 54.5 × 33 mm | ATtiny84 in a DIP-14 socket, 6-pin AVR ISP, addressable and plain RGB LED output |
 
-Each folder has the KiCad project, schematic PDF, Gerber ZIP, DRC report and top/bottom renders.
+Each folder has the KiCad project, schematic PDF, Gerber ZIP, DRC report and top/bottom renders. 2D dimension drawings (top, front and side view) are in [drawings/](drawings/), generated from the PCB by `generator/drawing.py`.
 
 **Status: not manufactured, not tested.** DRC: 0 unconnected pads, only silkscreen overlaps left.
 
@@ -17,6 +17,18 @@ Each folder has the KiCad project, schematic PDF, Gerber ZIP, DRC report and top
 - **Connectors:** 2.54 mm pin headers. Front panel headers are 1×2 with pin 1 = `+`, pin 2 = `-`, so the usual 2-pin case cables fit.
 - **LED** on a cable (1×4 header), so the board can sit anywhere behind the front panel.
 - **Button / switch:** `SW IN` and `SW OUT` are connected 1:1 (pass-through only, no electronics).
+
+## Dimensions
+
+| Board | Outline | Holes (from top left corner) |
+|---|---|---|
+| v1 | 48 × 22.5 × 1.6 mm | Ø3.2 at (3.5 / 11.25) and (44.5 / 11.25) |
+| v2 | 54.5 × 33 × 1.6 mm | Ø3.2 at (3.5 / 16.5) and (51 / 16.5) |
+
+Assumed, not measured: about 8.5 mm component height above the board (straight pin headers) and about 3 mm leads below. Angled headers change the height.
+
+![v1](drawings/v1-dimensions.png)
+![v2](drawings/v2-dimensions.png)
 
 ## v1 connectors
 

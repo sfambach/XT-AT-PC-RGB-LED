@@ -35,6 +35,19 @@ Details, variants and simulation results: [docs/concept.md](docs/concept.md)
 
 Simulation (ngspice): [sim/](sim/), transient plot `sim/three_states_tran.png`.
 
+## History and key points
+
+The project started as "one RGB LED for power and HDD" and grew step by step:
+
+1. **Power + HDD with one LED.** A single diode in series with green only works with InGaN green LEDs: with a common anode the colour with the lowest forward voltage wins. One transistor solves it.
+2. **Turbo added (red).** Red has about 2 V forward voltage and pulls the common anode down, so mixing colours (yellow) does not work. Result: two transistors, five diodes, HDD has priority (v1).
+3. **Unknown header polarity.** Which pin of the turbo header switches is not standardised. Instead of measuring every board, v2 uses a load resistor between the two pins and treats "pins differ" as active.
+4. **Microcontroller (v2).** A logic IC was rejected for v1 because the front panel has no clean 5 V. v2 accepts an extra 5 V cable and gets colours from a config file.
+5. **Addressable or plain RGB?** Addressable LEDs need no resistors and can be chained; illuminated RGB buttons only exist as plain RGB. v2 has both outputs, so the power button itself can be the indicator.
+6. **Boards.** v1 and v2 through-hole with the common M3 hole rule; v3 (full SMD) is planned.
+
+Open: measurement of the front panel headers, 5 V source for v2, building and testing.
+
 ## Parts
 
 | Ref | Part | Note |
